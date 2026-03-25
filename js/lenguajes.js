@@ -12,14 +12,14 @@ function getDataLenguajes(){
     // LOAD SPANISH JSON
     fetch("../data/dataEspanol.json").then((response) => response.json()).then( data => {
     document.getElementById('titulo').textContent = data.titulo;
-    boton.textContent = "En"
+    boton.textContent = data.lenguaje;
 })
 }
 else{
     // LOAD ENGLISH JSON 
     fetch("../data/dataEnglish.json").then((response)=> response.json()).then((data) => {
         document.getElementById("titulo").textContent = data.title
-        boton.textContent = "Sp"
+        boton.textContent = data.lenguaje;
     })
 
 }
