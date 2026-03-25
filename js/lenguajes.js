@@ -7,16 +7,19 @@ localStorage.setItem("lenguajes", true)
 getDataLenguajes()
 function getDataLenguajes(){
     let storage = JSON.parse(localStorage.getItem("lenguajes"));
+    let boton = document.querySelector(".button-lenguajes");
     if(storage == true){
     // LOAD SPANISH JSON
     fetch("../data/dataEspanol.json").then((response) => response.json()).then( data => {
-    document.getElementById('titulo').textContent = data.titulo
+    document.getElementById('titulo').textContent = data.titulo;
+    boton.textContent = "En"
 })
 }
 else{
     // LOAD ENGLISH JSON 
     fetch("../data/dataEnglish.json").then((response)=> response.json()).then((data) => {
         document.getElementById("titulo").textContent = data.title
+        boton.textContent = "Sp"
     })
 
 }
