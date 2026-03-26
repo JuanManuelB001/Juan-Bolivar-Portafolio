@@ -4,7 +4,7 @@
 localStorage.setItem("lenguajes", true)
 
 // UPDATE JSON INFORMATION
-getDataLenguajes()
+getDataLenguajes() // FIRST RUN FUNCTION
 function getDataLenguajes(){
     let storage = JSON.parse(localStorage.getItem("lenguajes"));
     let boton = document.querySelector(".button-lenguajes");
