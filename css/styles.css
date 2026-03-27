@@ -35,3 +35,17 @@ body{
     padding: 10px 20px;
     
 }
+
+#header-darkmode{
+    background-color: rgba(26, 24, 24, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 10px 20px rgba(26, 24, 24, 0.85);
+    border-bottom: 1px solid rgba(26, 24, 24, 0.85);
+    width: 100%;
+}
