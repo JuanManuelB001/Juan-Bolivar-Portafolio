@@ -12,6 +12,7 @@ body{
   font-optical-sizing: auto;
 }
 
+/* HEADER SECTION */
 #header{
     display: flex;
     justify-content: center;
@@ -33,6 +34,8 @@ body{
     width: 100%;
     max-width: 1440px;
     padding: 10px 20px;
+   
+    
     
 }
 
@@ -48,4 +51,71 @@ body{
     box-shadow: 0 10px 20px rgba(26, 24, 24, 0.85);
     border-bottom: 1px solid rgba(26, 24, 24, 0.85);
     width: 100%;
+}
+
+.header-open-nav-button{
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+    right: 10px;
+}
+
+.header-checkbox {
+    display: none;
+}
+
+.header-nav{
+    display: none;
+    background-color: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.header-nav-list{
+    display: flex;
+    flex-direction: column;
+    height: 400vh;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+/* PROFILE */
+.profile{
+    container-type: inline-size;
+    container-name: profile;
+}
+
+.profile-data{
+    padding: 20px;
+}
+
+.profile-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    max-width: 100%;
+}
+
+.profile-img-container{
+    position: relative;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+    transition: transform .5s ease;
 }

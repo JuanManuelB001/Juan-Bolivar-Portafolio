@@ -13,6 +13,7 @@ function getDataLenguajes(){
     fetch("../data/dataEspanol.json").then((response) => response.json()).then( data => {
     document.getElementById('titulo').textContent = data.titulo;
     boton.textContent = data.lenguaje;
+    document.querySelector(".profile-summary").innerHTML = data.profileText;
 })
 }
 else{
