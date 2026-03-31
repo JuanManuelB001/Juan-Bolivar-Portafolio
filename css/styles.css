@@ -144,25 +144,34 @@ body{
 
   .profile-wrapper {
     flex-direction: row;
+    padding: 20px;
+    background-color: transparent;
     height: 95vh;
+    margin: auto
   }
-
-  .profile-img-container {
-    width: 50%;
-    height: 100%;
-  }
-
-  .profile-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
+  
+  
   .profile-data-container {
-    width: 50%;
-    height: 100%;
-    overflow-y: auto;
-    background-color: #fff;
-    border-radius: 0 25px 25px 0;
-  }
+      background-color: #fff;
+      display: flex;
+      align-items: safe center;
+      border-radius: 0 25px 25px 0;
+      box-shadow: 0 0 9px #0005;
+      overflow-y: scroll
+    }
+    
+    .profile-data {
+        max-width: 620px
+    }
+    .profile-img-container{
+        max-height: 100%;
+        object-fit: cover;
+        max-width: 450px;
+    }
+    
+    .profile-img {
+      height: 100%;
+      object-fit: cover;
+      max-width: 450px;
+    }
 }
