@@ -2,11 +2,11 @@
 {
     "nombre": "Juan Manuel Bolivar Mojica",
     "lenguaje": "En",
-    "titulo":"titulo muy titular",
+    "titulo":"Ingeniero de Sistemas",
     "p": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi non ad vero, iure voluptate delectus consequuntur animi numquam fugit odio quae aliquam quod eos dolorem eaque voluptates? Voluptates, quas!",
     "indicators": {
         "num_experiences": "1+",
-        "text_experiences": "1 ano de Experiencia",
+        "text_experiences": "Año de Experiencia",
         "num_tecnology": "3+",
         "text_tecnology": "Tecnologias Dominadas"
     },

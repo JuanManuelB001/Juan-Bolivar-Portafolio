@@ -11,9 +11,17 @@ function getDataLenguajes(){
     if(storage == true){
     // LOAD SPANISH JSON
     fetch("../data/dataEspanol.json").then((response) => response.json()).then( data => {
-    document.getElementById('titulo').textContent = data.titulo;
+    document.querySelector('.name').textContent = data.nombre;
+    document.getElementById('title').textContent = data.titulo;
     boton.textContent = data.lenguaje;
     document.querySelector(".profile-summary").innerHTML = data.profileText;
+    //INDICATORS
+    document.querySelector(".experience_indicator-number").textContent = data.indicators.num_experiences;
+    document.querySelector(".experience-label").textContent = data.indicators.text_experiences;
+    
+    //TECNOLOGYS
+    document.querySelector(".tecnology-number").textContent = data.indicators.num_tecnology;
+    document.querySelector(".tecnology-label").textContent= data.indicators.text_tecnology;
 })
 }
 else{
