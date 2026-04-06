@@ -10,11 +10,14 @@
         "num_tecnology": "3+",
         "text_tecnology": "Tecnologias Dominadas"
     },
-    "skills": "tecnologíaa Claves",
+    "title_skills": "tecnologías Claves",
 
     "frontend": {
       "name": "Frontend",
-      "frontend": ["JavaScript", "Html5", "Css", "React"]
+      "frontend": {
+        "javaScript": ["JavaScript", "100%"], "html5": ["Html5","80%"], 
+        "css":["css", "80%"], 
+        "react":["React", "80%"]}
     },
 
     "backend":{

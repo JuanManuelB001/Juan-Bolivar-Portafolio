@@ -4,6 +4,7 @@
 localStorage.setItem("lenguajes", true)
 
 // UPDATE JSON INFORMATION
+// ESPANOL
 getDataLenguajes() // FIRST RUN FUNCTION
 function getDataLenguajes(){
     let storage = JSON.parse(localStorage.getItem("lenguajes"));
@@ -22,6 +23,16 @@ function getDataLenguajes(){
     //TECNOLOGYS
     document.querySelector(".tecnology-number").innerHTML = data.indicators.num_tecnology;
     document.querySelector(".tecnology-label").innerHTML= data.indicators.text_tecnology;
+
+    //SKILLS
+    document.querySelector(".h2-skills").textContent = data.title_skills;
+
+    // TRANSFORMAR A ARRAY
+    list_frontend = Object.values(data.frontend.frontend);
+    //RECORRER LA   LISTA 
+    list_frontend.forEach(element => {
+        document.querySelector(".frontend").innerHTML += `<ul><li class="profile-skill"><div class=""load-bar ><div class="load-bar-bar">${element[1]} </div> </div> <span class="profile-skill-name"> ${element[0]}</span></li></ul>`
+    });
 })
 }
 else{
