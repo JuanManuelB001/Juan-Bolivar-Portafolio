@@ -136,6 +136,25 @@ body{
     object-position: 50% 20%;
     transition: transform .5s ease;
 }
+.profile-title{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0 ;
+    flex-wrap: wrap;
+}
+
+.indicators{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.indicators-number{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: aqua;
+}
+
 /* MENU MOVIL
 .header-checkbox:checked~.header-nav{
     display: flex;

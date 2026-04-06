@@ -16,12 +16,12 @@ function getDataLenguajes(){
     boton.textContent = data.lenguaje;
     document.querySelector(".profile-summary").innerHTML = data.profileText;
     //INDICATORS
-    document.querySelector(".experience_indicator-number").textContent = data.indicators.num_experiences;
-    document.querySelector(".experience-label").textContent = data.indicators.text_experiences;
+    document.querySelector(".indicator-number").innerHTML = data.indicators.num_experiences;
+    document.querySelector(".experience-label").innerHTML = data.indicators.text_experiences;
     
     //TECNOLOGYS
-    document.querySelector(".tecnology-number").textContent = data.indicators.num_tecnology;
-    document.querySelector(".tecnology-label").textContent= data.indicators.text_tecnology;
+    document.querySelector(".tecnology-number").innerHTML = data.indicators.num_tecnology;
+    document.querySelector(".tecnology-label").innerHTML= data.indicators.text_tecnology;
 })
 }
 else{
