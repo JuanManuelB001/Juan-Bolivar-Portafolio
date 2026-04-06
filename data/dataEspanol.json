@@ -10,6 +10,22 @@
         "num_tecnology": "3+",
         "text_tecnology": "Tecnologias Dominadas"
     },
+    "skills": "tecnologíaa Claves",
+
+    "frontend": {
+      "name": "Frontend",
+      "frontend": ["JavaScript", "Html5", "Css", "React"]
+    },
+
+    "backend":{
+      "name": "Backend", 
+      "backend":["Sprint Boot", "Python"]
+    },
+    "dataBase":{
+      "name": "DataBase",
+      "dataBase": ["MySql", "PostgreSql", "FireBase"]
+    },
+
   "profileText": "Estudiante de Ingeniería de Sistemas, cursando el octavo semestre, con un perfil orientado a la responsabilidad, la innovación y la mejora continua. Destaco por mi iniciativa, proactividad y capacidad para adaptarme a nuevos desafíos. Poseo excelentes habilidades interpersonales, facilidad para el trabajo en equipo y un enfoque analítico para la resolución de problemas.  Experiencia en desarrollo de software utilizando PHP, <strong>Python</strong>, Java con Spring Boot para backend, Flutter para frontend móvil, y React para frontend web. Manejo de control de versiones con Git y gestión de proyectos en GitHub, aplicando principios de programación orientada a objetos y desarrollo de aplicaciones completas tanto web como móviles."
 
 }
