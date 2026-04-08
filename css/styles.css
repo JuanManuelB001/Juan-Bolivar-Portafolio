@@ -13,7 +13,7 @@ body {
 }
 
 /* HEADER SECTION */
-#header {
+.header {
   display: flex;
   justify-content: center;
   background-color: rgba(92, 86, 86, 0.85);
@@ -26,6 +26,43 @@ body {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   width: 100%;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 10px 20px;
+  container-type: inline-size;
+  container-name: header;
+}
+
+.header-logo {
+  height: 50px;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+}
+
+.header-nav-item {
+  list-style: none;
+}
+
+.header-nav-item a {
+  color: aqua;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
+.header-nav-item :is(:hover, :active) {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.header-logo:hover {
+  transform: scale(1.05);
 }
 .name {
   padding: 0 auto;
@@ -92,6 +129,16 @@ body {
   height: 400vh;
   margin: auto;
   justify-content: space-evenly;
+}
+
+.header-checkbox:checked ~ .header-nav {
+  display: flex;
+  z-index: 999;
+}
+
+.header-checkbox:checked ~ .header-open-nav-button {
+  display: flex;
+  z-index: 1001;
 }
 
 /* PROFILE */
@@ -294,57 +341,73 @@ h2::after,
   opacity: 1;
 }
 
-.profile-badges{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.profile-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.profile-badge{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aqua;
-    color: #fff;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    width: 100px;
-    height: 20px;
-    padding: 12px 15px;
-    font-size: .85rem;
-    font-weight: 500;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+.profile-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  width: 100px;
+  height: 20px;
+  padding: 12px 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
 }
 
+.tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
+.tool-tag {
+  background-color: aqua;
+  border: none;
+  outline: none;
+  color: black;
+  border-radius: 20px;
+  transition: all 0.3s ease-out;
+}
 
-.tools-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.tool-tag:hover {
+  transform: translatey(-5px);
+  background-color: aquamarine;
+  color: white;
+}
+
+@container header (min-width: 600px) {
+  .header-nav {
+    display: block;
+    position: static;
+    height: auto;
+    width: auto;
+    justify-content: space-between;
+    z-index: 1;
+    background-color: transparent;
+    backdrop-filter: none;
+  }
+  .header-nav-list {
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.tool-tag{
-    background-color: aqua;
-    border: none;
-    outline: none;
-    color: black;
-    border-radius: 20px;
-    transition: all .3s ease-out;
-}
-
-.tool-tag:hover{
-    transform: translatey(-5px);
-    background-color: aquamarine;
-    color: white;
-    
+    height: auto;
+    width: auto;
+    gap: 20px;
+    margin-right: 40px;
+  }
 }
 
 /* DIVIDIR PANTALLA PROFILE-DATA*/

@@ -8,7 +8,7 @@
     <title>Portafolio Juan Manuel Bolivar</title>
   </head>
   <body>
-    <header id="header">
+    <header class="header" id="header">
       <div class="container-nav">
         <input type="checkbox" class="header-checkbox" id="open-menu" />
         <label
@@ -19,32 +19,31 @@
           >=</label
         >
         <div class="header-logo-container">
-            <img src="" alt="Image Container">
+          <img
+            class="header-logo"
+            src="./img/ww_logo.png"
+            alt="Image Container"
+          />
         </div>
+
         
-          <nav class="header-nav">
-            <ul class="header-nav-list">
-              <li class="header-nav-item">
-                <!-- #profile -->
-                <a href="#profile">Perfil</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header-button-container">
-            <button onclick="changeLenguajes()" class="button-lenguaje">
-              <p class="button-lenguajes"></p>
-            </button>
-            <input
-              type="image"
-              src="img/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png"
-              class="darkmode-button"
-            />
-            <a href="pdf/" class="download-curriculum">dw curriculom</a>
-          </div>
-       
+        <nav class="header-nav" id="header-nav">
+          <ul class="header-nav-list">
+        </nav>
+        <div class="header-button-container">
+          <button onclick="changeLenguajes()" class="button-lenguaje">
+            <p class="button-lenguajes"></p>
+          </button>
+          <input
+            type="image"
+            src="img/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png"
+            class="darkmode-button"
+          />
+          <a href="pdf/" class="download-curriculum">dw curriculom</a>
+        </div>
       </div>
     </header>
-    <main class="profile">
+    <main class="profile" id="profile">
       <div class="profile-wrapper">
         <div class="profile-img-container">
           <img
@@ -55,11 +54,10 @@
           <div class="profile-overlay">
             <div class="profile-badges">
               <span class="profile-badge span-1">fdsgdfs</span>
-               <span class="profile-badge span-1">fdsgdfs</span>
-                <span class="profile-badge span-1">fdsgdfs</span>
-                 <span class="profile-badge span-1">fdsgdfs</span>
+              <span class="profile-badge span-1">fdsgdfs</span>
+              <span class="profile-badge span-1">fdsgdfs</span>
+              <span class="profile-badge span-1">fdsgdfs</span>
             </div>
-           
           </div>
         </div>
 
@@ -71,17 +69,18 @@
               <div class="profile-title">
                 <div class="indicators">
                   <div class="experience">
-                    <p class="experience indicators-number indicator-number"></p>
+                    <p
+                      class="experience indicators-number indicator-number"
+                    ></p>
                     <p class="experience-label indicator-label"></p>
                   </div>
-                  </div>
-                  <div class="indicators">
+                </div>
+                <div class="indicators">
                   <div class="tecnology">
                     <p class="indicators-number tecnology-number"></p>
                     <p class="indicator-label tecnology-label"></p>
                   </div>
-                  </div>
-                
+                </div>
               </div>
               <div class="text-container">
                 <p class="profile-summary"></p>
@@ -91,43 +90,39 @@
             <div class="profile-sections">
               <div class="profile-techologies">
                 <h2 class="h2-skills"></h2>
-                
+
                 <!-- FRONTEND -->
                 <div class="tech-category">
                   <h3 class="title-skills frontend"></h3>
-                  <ul class="list-frontend">
-                    
-                  </ul>
+                  <ul class="list-frontend"></ul>
                 </div>
                 <!-- BACKEND -->
                 <div class="tech-category">
-                  <h3 class="title-skills  backend"></h3>
-                  <ul class="list-backend">
-
-                  </ul>
+                  <h3 class="title-skills backend"></h3>
+                  <ul class="list-backend"></ul>
                 </div>
 
                 <!-- DATABASES -->
-                 <div class="tech-category">
+                <div class="tech-category">
                   <h3 class="title-skills database"></h3>
                   <ul class="list-databases"></ul>
-                 </div>
+                </div>
               </div>
+              <!-- STUDIES -->
+              <div class="studies-container">
+                <h2 class="studies-title"></h2>
+                <div class="studies"></div>
+              </div>
+
               <div class="profile-framework">
                 <h2>Herramientas y FrameWorks</h2>
-                <div class="tools-container">
-
-                </div>
+                <div class="tools-container"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-    
-    <p class="p"></p>
-
-
     <script src="js/lenguajes.js"></script>
   </body>
 </html>

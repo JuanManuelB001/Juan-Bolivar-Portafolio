@@ -1,6 +1,12 @@
 {
   "nombre": "Juan Manuel Bolivar Mojica",
   "lenguaje": "En",
+  "nav": {
+    "profile": "Perfil",
+    "experiencia": "Experiencias",
+    "portafolio": "Portafolio",
+    "contacto": "Contacto"
+  },
   "titulo": "Ingeniero de Sistemas",
   "p": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi non ad vero, iure voluptate delectus consequuntur animi numquam fugit odio quae aliquam quod eos dolorem eaque voluptates? Voluptates, quas!",
   "indicators": {
@@ -36,6 +42,21 @@
       "firebase:": ["FireBase", "80"]
     }
   },
+  "estudios": {
+    "titulo": "Formación Académica",
+    "pre-grado": {
+      "periodo": "2019-2026",
+      "grado": "PreGrado",
+      "titulo": "Ingeniero de Sistemas",
+      "universidad": "Universidad Central"
+    },
+    "pos-grado": {
+      "periodo": "2019-2026",
+      "grado": "PreGrado",
+      "titulo": "Ingeniero de Sistemas",
+      "universidad": "Universidad Central"
+    }
+  },
   "tools_technologies": [
     "Java",
     "Python",
@@ -44,11 +65,13 @@
     "React",
     "Spring Boot",
     "Flutter",
-    "Firebase",
+    "FireBase",
     "Google Cloud Platform",
     "BigQuery",
     "Git",
     "GitHub",
+    "PostMan",
+    "Talend API Test",
     "Android Studio",
     "IntelliJ IDEA",
     "Eclipse IDE",
