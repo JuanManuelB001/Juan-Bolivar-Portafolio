@@ -195,7 +195,7 @@ h2::after, .h2-skills::after{
     background-color: aqua;
     border-radius: 2px;
 }
-.frontend{
+.title-skills{
     color: aqua;
     font-size: 1.2rem;
     margin-bottom: 15px;

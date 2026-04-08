@@ -29,10 +29,29 @@ function getDataLenguajes(){
     document.querySelector(".frontend").textContent = data.frontend.name;
     // TRANSFORMAR A ARRAY
     list_frontend = Object.values(data.frontend.frontend);
-    //RECORRER LA   LISTA 
+    //RECORRER LA   LISTA FRONTEND
     list_frontend.forEach(element => {
         document.querySelector(".list-frontend").innerHTML += `<ul><li class="profile-skill"><div class="load-bar" ><div class="bar-percentage" style="width:${element[1]}%" >${element[1]}% </div> </div> <span class="profile-skill-name"> ${element[0]}</span></li></ul>`
     });
+
+    document.querySelector(".backend").textContent = data.backend.name;
+    // RECORRER LISTA BACKEND
+    list_backend = Object.values(data.backend.backend);
+    console.log(list_backend)
+
+    list_backend.forEach(element =>{
+        document.querySelector(".list-backend").innerHTML +=`<ul><li class="profile-skill"><div  class="load-bar" ><div class="bar-percentage" style="width:${element[1]}%">${element[1]}%</div></div><span class="profile-skill-name"> ${element[0]}</span></li></ul>`
+    })
+    // RECORRER LISTA DATABASES
+    document.querySelector(".database").textContent = data.dataBase.name;
+    //CAPTURARA LISTA DE DATABASE
+    list_batebase = Object.values(data.dataBase.dataBase);
+
+    // MODIFICAR HTML
+    list_batebase.forEach((element)=>{
+        document.querySelector(".list-databases").innerHTML += `<ul><li class="profile-skill"><div  class="load-bar" ><div class="bar-percentage" style="width:${element[1]}%">${element[1]}%</div></div><span class="profile-skill-name"> ${element[0]}</span></li></ul>`
+    })
+
 })
 }
 else{
