@@ -52,7 +52,7 @@ function getDataLenguajes(){
         document.querySelector(".list-databases").innerHTML += `<ul><li class="profile-skill"><div  class="load-bar" ><div class="bar-percentage" style="width:${element[1]}%">${element[1]}%</div></div><span class="profile-skill-name"> ${element[0]}</span></li></ul>`
     })
     // CAPTURARA INFORMACION JSON
-    list_tools=  Object.values(data.tools)
+    list_tools=  Object.values(data.tools_technologies)
     list_tools.forEach((element)=>{
         document.querySelector(".tools-container").innerHTML+=`<span class="tool-tag">${element}</span>` 
     })

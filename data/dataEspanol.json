@@ -1,43 +1,61 @@
-
 {
-    "nombre": "Juan Manuel Bolivar Mojica",
-    "lenguaje": "En",
-    "titulo":"Ingeniero de Sistemas",
-    "p": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi non ad vero, iure voluptate delectus consequuntur animi numquam fugit odio quae aliquam quod eos dolorem eaque voluptates? Voluptates, quas!",
-    "indicators": {
-        "num_experiences": "1+",
-        "text_experiences": "Año de Experiencia",
-        "num_tecnology": "3+",
-        "text_tecnology": "Tecnologias Dominadas"
-    },
-    "title_skills": "tecnologías Claves",
+  "nombre": "Juan Manuel Bolivar Mojica",
+  "lenguaje": "En",
+  "titulo": "Ingeniero de Sistemas",
+  "p": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi non ad vero, iure voluptate delectus consequuntur animi numquam fugit odio quae aliquam quod eos dolorem eaque voluptates? Voluptates, quas!",
+  "indicators": {
+    "num_experiences": "1+",
+    "text_experiences": "Año de Experiencia",
+    "num_tecnology": "3+",
+    "text_tecnology": "Tecnologias Dominadas"
+  },
+  "title_skills": "tecnologías Claves",
 
+  "frontend": {
+    "name": "Frontend",
     "frontend": {
-      "name": "Frontend",
-      "frontend": {
-        "javaScript": ["JavaScript", "100"],
-        "html5": ["Html5","80"], 
-        "css":["css", "80"], 
-        "react":["React", "80"]}
-    },
+      "javaScript": ["JavaScript", "100"],
+      "html5": ["Html5", "80"],
+      "css": ["css", "80"],
+      "react": ["React", "80"]
+    }
+  },
 
-    "backend":{
-      "name": "Backend", 
-      "backend":{
-        "sprint": ["Sprint Boot","80"],
-        "python": ["Python","80"]
-      }
-    },
-    "dataBase":{
-      "name": "DataBase",
-      "dataBase":{
-        "mysql": ["MySql", "80"],
-        "postgresql": ["PostGreSql", "80"],
-        "firebase:": ["FireBase", "80"]
-      }
-      
-    },
-    "tools":["python", "python", "java"],
+  "backend": {
+    "name": "Backend",
+    "backend": {
+      "sprint": ["Sprint Boot", "80"],
+      "python": ["Python", "80"]
+    }
+  },
+  "dataBase": {
+    "name": "DataBase",
+    "dataBase": {
+      "mysql": ["MySql", "80"],
+      "postgresql": ["PostGreSql", "80"],
+      "firebase:": ["FireBase", "80"]
+    }
+  },
+  "tools_technologies": [
+    "Java",
+    "Python",
+    "JavaScript",
+    "SQL",
+    "React",
+    "Spring Boot",
+    "Flutter",
+    "Firebase",
+    "Google Cloud Platform",
+    "BigQuery",
+    "Git",
+    "GitHub",
+    "Android Studio",
+    "IntelliJ IDEA",
+    "Eclipse IDE",
+    "Visual Studio Code",
+    "JUnit",
+    "Mockito",
+    "Espresso"
+  ],
   "profileText": "Estudiante de Ingeniería de Sistemas, cursando el octavo semestre, con un perfil orientado a la responsabilidad, la innovación y la mejora continua. Destaco por mi iniciativa, proactividad y capacidad para adaptarme a nuevos desafíos. Poseo excelentes habilidades interpersonales, facilidad para el trabajo en equipo y un enfoque analítico para la resolución de problemas.  Experiencia en desarrollo de software utilizando PHP, <strong>Python</strong>, Java con Spring Boot para backend, Flutter para frontend móvil, y React para frontend web. Manejo de control de versiones con Git y gestión de proyectos en GitHub, aplicando principios de programación orientada a objetos y desarrollo de aplicaciones completas tanto web como móviles."
-
 }
