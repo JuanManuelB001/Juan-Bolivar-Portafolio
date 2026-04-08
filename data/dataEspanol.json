@@ -15,9 +15,10 @@
     "frontend": {
       "name": "Frontend",
       "frontend": {
-        "javaScript": ["JavaScript", "100%"], "html5": ["Html5","80%"], 
-        "css":["css", "80%"], 
-        "react":["React", "80%"]}
+        "javaScript": ["JavaScript", "100"],
+        "html5": ["Html5","80"], 
+        "css":["css", "80"], 
+        "react":["React", "80"]}
     },
 
     "backend":{

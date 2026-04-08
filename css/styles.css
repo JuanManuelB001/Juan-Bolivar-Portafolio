@@ -155,6 +155,105 @@ body{
     color: aqua;
 }
 
+.profile-skill-name{
+    color: aqua;
+}
+
+/* TECNOLOGIES */
+.profile-sections{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-tecnologies{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.tech-category{
+    margin-bottom: 20px;
+}
+h2,h2-skills{
+    color: aqua;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+h2::after, .h2-skills::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: aqua;
+    border-radius: 2px;
+}
+.frontend{
+    color: aqua;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+    padding-left: 10px;
+   border-left: 3px solid #0005;
+}
+
+.profile-skill{
+    display: flex;
+    list-style: none;
+    padding: 2px;
+    margin: 0 0 12px 5px;
+    max-width: 500px;
+    align-items: center;
+}
+
+.load-bar{
+    border:  2px solid #0005;
+    border-radius: 8px;
+    color: #fff;
+    padding: 2px;
+    font-size: 10px;
+    width: 200px;
+    margin: 4px 10px 4px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.bar-percentage{
+    background-color: black;
+    border-radius: 4px;
+}
+.profile-skill-name{
+    margin-left: 8px;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+}
+.load-bar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent,rgba(255, 255, 255, 0.2), transparent);
+    animation: shine 1.4s infinite;
+}
+
+@keyframes shine{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(550%);
+    }
+}
+
 /* MENU MOVIL
 .header-checkbox:checked~.header-nav{
     display: flex;
