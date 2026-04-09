@@ -82,7 +82,13 @@ function getDataLenguajes() {
     fetch("../data/dataEnglish.json")
       .then((response) => response.json())
       .then((data) => {
-        document.getElementById("titulo").textContent = data.title;
+        // NAV
+        list_nav = Object.entries(data.nav);
+        list_nav.forEach(([key, value]) => {
+          document.querySelector(".header-nav-list").innerHTML +=
+            `<li class="header-nav-item" ><a href="#${key}">${value}</a></li>`;
+        });
+        document.getElementById("title").textContent = data.title;
         boton.textContent = data.lenguaje;
       });
   }
@@ -91,9 +97,15 @@ function getDataLenguajes() {
 function changeLenguajes() {
   let isSpanish = JSON.parse(localStorage.getItem("lenguajes"));
   storage = localStorage.setItem("lenguajes", JSON.stringify(!isSpanish));
+
   updatePage();
 }
 
 function updatePage() {
+  cleanDom();
   getDataLenguajes();
+}
+
+function cleanDom() {
+  document.querySelector(".header-nav-list").innerHTML = "";
 }

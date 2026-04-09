@@ -1,6 +1,11 @@
 {
-    "name": "Juan Manuel Bolivar Mojica",
-    "lenguaje": "Es",
-    "title": "Title of Title"
-
+  "name": "Juan Manuel Bolivar Mojica",
+  "lenguaje": "Es",
+  "title": "Title of Title",
+  "nav": {
+    "profile": "profile",
+    "experiencia": "Experince",
+    "portafolio": "Folder",
+    "contacto": "Contact"
+  }
 }

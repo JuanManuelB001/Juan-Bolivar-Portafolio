@@ -64,6 +64,32 @@ body {
 .header-logo:hover {
   transform: scale(1.05);
 }
+.header-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 20px;
+}
+
+.button-lenguaje {
+  padding: 10px 15px;
+  border-radius: 18px;
+  padding: 8px 16px;
+  background-color: rgba(195, 59, 59, 0.2);
+  color: red;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.button-lenguaje:hover {
+  background-color: rgba(195, 59, 59, 1);
+  color: #fff;
+}
+
+.button-lenguaje:focus {
+  transform: scale(1.01);
+}
+
 .name {
   padding: 0 auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
