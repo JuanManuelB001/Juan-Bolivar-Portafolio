@@ -79,17 +79,20 @@ body {
   color: red;
   border: none;
   outline: none;
-  transition: all 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3,
+    ease,
+    transform 0.1s ease;
 }
 .button-lenguaje:hover {
   background-color: rgba(195, 59, 59, 1);
   color: #fff;
 }
 
-.button-lenguaje:focus {
-  transform: scale(1.01);
+.button-lenguaje:active {
+  transform: scale(0.9);
 }
-
 .name {
   padding: 0 auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
