@@ -19,8 +19,8 @@ function getDataLenguajes() {
             `<li class="header-nav-item" ><a href="#${key}">${value}</a></li>`;
         });
 
-        document.querySelector(".name").textContent = data.nombre;
-        document.getElementById("title").textContent = data.titulo;
+        document.querySelector(".name").textContent = data.name;
+        document.getElementById("title").textContent = data.title;
         boton.textContent = data.lenguaje;
         document.querySelector(".profile-summary").innerHTML = data.profileText;
         //INDICATORS
@@ -108,4 +108,8 @@ function updatePage() {
 
 function cleanDom() {
   document.querySelector(".header-nav-list").innerHTML = "";
+  document.querySelector(".list-frontend").innerHTML = "";
+  document.querySelector(".list-backend").innerHTML = "";
+  document.querySelector(".list-databases").innerHTML = "";
+  document.querySelector(".tools-container").innerHTML = "";
 }

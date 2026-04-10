@@ -1,13 +1,13 @@
 {
-  "nombre": "Juan Manuel Bolivar Mojica",
-  "lenguaje": "Es",
+  "name": "Juan Manuel Bolivar Mojica",
+  "lenguaje": "En",
   "nav": {
     "profile": "Perfil",
-    "experiencia": "Experiencias",
+    "experince": "Experiencias",
     "portafolio": "Portafolio",
-    "contacto": "Contacto"
+    "contact": "Contacto"
   },
-  "titulo": "Ingeniero de Sistemas",
+  "title": "Ingeniero de Sistemas",
   "p": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi non ad vero, iure voluptate delectus consequuntur animi numquam fugit odio quae aliquam quod eos dolorem eaque voluptates? Voluptates, quas!",
   "indicators": {
     "num_experiences": "1+",
@@ -15,7 +15,7 @@
     "num_tecnology": "3+",
     "text_tecnology": "Tecnologias Dominadas"
   },
-  "title_skills": "tecnologías Claves",
+  "title_skills": "TECNOLOGIAS CLAVES",
 
   "frontend": {
     "name": "Frontend",
@@ -42,19 +42,19 @@
       "firebase:": ["FireBase", "80"]
     }
   },
-  "estudios": {
-    "titulo": "Formación Académica",
-    "pre-grado": {
-      "periodo": "2019-2026",
-      "grado": "PreGrado",
-      "titulo": "Ingeniero de Sistemas",
-      "universidad": "Universidad Central"
+  "studies": {
+    "title": "Formación Académica",
+    "grade": {
+      "period": "2019-2026",
+      "grade": "PreGrado",
+      "title": "Ingeniero de Sistemas",
+      "university": "Universidad Central"
     },
-    "pos-grado": {
-      "periodo": "2019-2026",
-      "grado": "PreGrado",
-      "titulo": "Ingeniero de Sistemas",
-      "universidad": "Universidad Central"
+    "postgraduate": {
+      "period": "2019-2026",
+      "grade": "PreGrado",
+      "title": "Ingeniero de Sistemas",
+      "university": "Universidad Central"
     }
   },
   "tools_technologies": [
