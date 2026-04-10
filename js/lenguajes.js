@@ -58,6 +58,7 @@ function putInformation(data) {
     data.indicators.text_tecnology;
 
   //SKILLS
+
   document.querySelector(".h2-skills").textContent = data.title_skills;
   document.querySelector(".frontend").textContent = data.frontend.name;
   // TRANSFORMAR A ARRAY
@@ -86,6 +87,8 @@ function putInformation(data) {
     document.querySelector(".list-databases").innerHTML +=
       `<ul><li class="profile-skill"><div  class="load-bar" ><div class="bar-percentage" style="width:${element[1]}%">${element[1]}%</div></div><span class="profile-skill-name"> ${element[0]}</span></li></ul>`;
   });
+
+  document.querySelector(".framework-title").textContent = data.profile_title;
   // CAPTURARA INFORMACION JSON
   list_tools = Object.values(data.tools_technologies);
   list_tools.forEach((element) => {
@@ -94,7 +97,7 @@ function putInformation(data) {
   });
 
   // STUDIES
-  document.querySelector(".studies-title").textContent = data.estudios.titulo;
+  document.querySelector(".studies-title").textContent = data.studies.title;
 
   `<div class="studies-details" ></div>`;
 }
