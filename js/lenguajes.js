@@ -99,10 +99,9 @@ function putInformation(data) {
   // STUDIES
   document.querySelector(".studies-title").textContent = data.studies.title;
   //PREGRADO
-  list_pregrade = Object.entries(data.studies.grade);
-  console.log(list_pregrade);
-  list_pregrade.forEach((element) => {
-    `<div class="studies-details" ><div  class="title-wrapper"><p class="studies-grade">${element.grade}</p> <span>${element.period}</span></div><div class="information" ><span class="title" >Title: ${element.title}</span><span class="university">University: </span>${element.university}</div></div>`;
+  data.studies.grade.forEach((element, index) => {
+    document.querySelector(".studies").innerHTML +=
+      `<div class="studies-details" ><div  class="title-wrapper"><p class="studies-grade">${element.grade}</p> <span class="period">${element.period}</span></div><div class="information" ><span class="title" >Title: ${element.title}</span><span class="university">University: </span>${element.university}</div></div>`;
   });
 }
 
@@ -117,4 +116,5 @@ function cleanDom() {
   document.querySelector(".list-backend").innerHTML = "";
   document.querySelector(".list-databases").innerHTML = "";
   document.querySelector(".tools-container").innerHTML = "";
+  document.querySelector(".studies").innerHTML = "";
 }

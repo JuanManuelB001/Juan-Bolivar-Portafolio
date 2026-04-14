@@ -356,7 +356,37 @@ h2::after,
     transform: translateX(550%);
   }
 }
+.studies {
+  display: flex;
+  width: 100%;
 
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.studies-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.period {
+  background-color: aqua;
+  padding: 6px;
+  border-radius: 9px;
+  color: #fff;
+  transition: transform 0.2s ease box-shadow 0.25s ease;
+}
+.period:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 .title,
 .university {
   display: block;
