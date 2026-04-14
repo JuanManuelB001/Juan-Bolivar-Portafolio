@@ -98,8 +98,12 @@ function putInformation(data) {
 
   // STUDIES
   document.querySelector(".studies-title").textContent = data.studies.title;
-
-  `<div class="studies-details" ></div>`;
+  //PREGRADO
+  list_pregrade = Object.entries(data.studies.grade);
+  console.log(list_pregrade);
+  list_pregrade.forEach((element) => {
+    `<div class="studies-details" ><div  class="title-wrapper"><p class="studies-grade">${element.grade}</p> <span>${element.period}</span></div><div class="information" ><span class="title" >Title: ${element.title}</span><span class="university">University: </span>${element.university}</div></div>`;
+  });
 }
 
 function updatePage() {

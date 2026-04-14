@@ -44,12 +44,20 @@
   },
   "studies": {
     "title": "Formación Académica",
-    "grade": {
-      "period": "2019-2026",
-      "grade": "PreGrado",
-      "title": "Ingeniero de Sistemas",
-      "university": "Universidad Central"
-    },
+    "grade": [
+      {
+        "period": "2019-2026",
+        "grade": "PreGrado",
+        "title": "Ingeniero de Sistemas",
+        "university": "Universidad Central"
+      },
+      {
+        "period": "2026",
+        "grade": "PreGrado",
+        "title": "Ingeniero de Industrial",
+        "university": "Universidad Central"
+      }
+    ],
     "postgraduate": {
       "period": "2019-2026",
       "grade": "PreGrado",

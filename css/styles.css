@@ -357,6 +357,10 @@ h2::after,
   }
 }
 
+.title,
+.university {
+  display: block;
+}
 /* MENU MOVIL
 .header-checkbox:checked~.header-nav{
     display: flex;
