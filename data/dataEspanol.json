@@ -53,17 +53,25 @@
       },
       {
         "period": "202226",
-        "grade": "PreGrado",
+        "grade": "PosGrado",
         "title": "Ingeniero de Industrial",
         "university": "Universidad Central"
       }
     ],
-    "postgraduate": {
-      "period": "2019-2026",
-      "grade": "PreGrado",
-      "title": "Ingeniero de Sistemas",
-      "university": "Universidad Central"
-    }
+    "postgraduate": [
+      {
+        "period": "2019-2026",
+        "grade": "PosGrado",
+        "title": "Ingeniero de Sistemas",
+        "university": "Universidad Central"
+      },
+      {
+        "period": "20886",
+        "grade": "PreGrado",
+        "title": "Magister en pendejadas",
+        "university": "Universidad Central"
+      }
+    ]
   },
   "profile_title": "Herramientas y FrameWorks",
   "tools_technologies": [

@@ -39,6 +39,7 @@ function changeLenguajes() {
 }
 
 function putInformation(data) {
+  let storage = JSON.parse(localStorage.getItem("lenguajes"));
   // NAV
   list_nav = Object.entries(data.nav);
   list_nav.forEach(([key, value]) => {
@@ -98,10 +99,16 @@ function putInformation(data) {
 
   // STUDIES
   document.querySelector(".studies-title").textContent = data.studies.title;
-  //PREGRADO
-  data.studies.grade.forEach((element, index) => {
+  // PREGRADO
+  data.studies.grade.forEach((element) => {
     document.querySelector(".studies").innerHTML +=
-      `<div class="studies-details" ><div  class="title-wrapper"><p class="studies-grade">${element.grade}</p> <span class="period">${element.period}</span></div><div class="information" ><span class="title" >Title: ${element.title}</span><span class="university">University: </span>${element.university}</div></div>`;
+      ` <div class="studies-details" ><div  class="title-wrapper"><p class="studies-grade">${element.grade}</p> <span class="period">${element.period}</span></div><div class="information" ><span class="title" >${storage ? "Titulo: " : "Title: "}${element.title}</span><span class="university">${storage ? "Universidad: " : "University: "} </span>${element.university}</div></div>`;
+  });
+  // POS-GRADO
+
+  data.studies.postgraduate.forEach((element) => {
+    document.querySelector(".studies").innerHTML +=
+      ` <div class="studies-details" ><div  class="title-wrapper"><p class="studies-grade">${element.grade}</p> <span class="period">${element.period}</span></div><div class="information" ><span class="title" >${storage ? "Titulo: " : "Title: "}${element.title}</span><span class="university">${storage ? "Universidad: " : "University: "} </span>${element.university}</div></div>`;
   });
 }
 

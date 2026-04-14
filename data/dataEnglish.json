@@ -44,18 +44,34 @@
   },
   "studies": {
     "title": "Education",
-    "grade": {
-      "period": "2019-2026",
-      "grade": "PreGrado",
-      "title": "Ingeniero de Sistemas",
-      "university": "Universidad Central"
-    },
-    "postgraduate": {
-      "period": "2019-2026",
-      "grade": "PreGrado",
-      "title": "Ingeniero de Sistemas",
-      "university": "Universidad Central"
-    }
+    "grade": [
+      {
+        "period": "2019-2026",
+        "grade": "PreGrado",
+        "title": "Ingeniero de Sistemas",
+        "university": "Universidad Central"
+      },
+      {
+        "period": "202226",
+        "grade": "PreGrado",
+        "title": "Ingeniero de Industrial",
+        "university": "Universidad Central"
+      }
+    ],
+    "postgraduate": [
+      {
+        "period": "2019-2026",
+        "grade": "Undergraduate",
+        "title": "Ingeniero de Sistemas",
+        "university": "Universidad Central"
+      },
+      {
+        "period": "20886",
+        "grade": "Undergraduate",
+        "title": "tHING OF VALUES",
+        "university": "Universidad Central"
+      }
+    ]
   },
   "profile_title": "Tools and Frameworks",
   "tools_technologies": [

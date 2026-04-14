@@ -356,37 +356,64 @@ h2::after,
     transform: translateX(550%);
   }
 }
+
 .studies {
   display: flex;
-  width: 100%;
-
-  flex-direction: row;
   flex-wrap: wrap;
-}
-.studies-details {
-  display: flex;
+  gap: 20px;
+  width: 100%;
   justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
 }
 
+/* CARD */
+.studies-details {
+  flex: 1 1 280px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-radius 0.2s ease;
+}
+
+.studies-details:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* HEADER DE LA CARD */
 .title-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
+
+/* BADGE DEL AÑO */
 .period {
   background-color: aqua;
-  padding: 6px;
-  border-radius: 9px;
-  color: #fff;
-  transition: transform 0.2s ease box-shadow 0.25s ease;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: #000;
+  font-size: 0.85rem;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
 }
+
 .period:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* TEXTO EN BLOQUE */
 .title,
 .university {
   display: block;
