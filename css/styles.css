@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* principal color hover rgba(14, 165, 233, 1)*/
+:root {
+  --background-whiteMode-title: rgba(6, 182, 212, 1);
+}
 
 * {
   margin: 0;
@@ -7,7 +11,7 @@
 }
 
 body {
-  background-color: aliceblue;
+  background-color: rgba(248, 250, 252, 1);
   font-family: "Atkinson Hyperlegible Mono", sans-serif;
   font-optical-sizing: auto;
 }
@@ -16,13 +20,13 @@ body {
 .header {
   display: flex;
   justify-content: center;
-  background-color: rgba(92, 86, 86, 0.85);
+  background-color: rgba(255, 255, 255, 0.8);
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 10px 20px rgba(26, 24, 24, 0.85);
-  border-bottom: 1px solid rgba(92, 86, 86, 0.85);
+  box-shadow: 0 5px 10px rgba(26, 24, 24, 0.5);
+  border-bottom: none;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   width: 100%;
@@ -55,13 +59,13 @@ body {
 }
 
 .header-nav-item a {
-  color: aqua;
+  color: rgba(71, 85, 105, 1);
   text-decoration: none;
   transition: all 0.2s ease-out;
 }
 
 .header-nav-item :is(:hover, :active) {
-  color: #fff;
+  color: rgba(15, 23, 42, 1);
   text-decoration: underline;
 }
 
@@ -252,7 +256,7 @@ body {
 .indicators-number {
   font-size: 2.2rem;
   font-weight: 700;
-  color: aqua;
+  color: var(--background-whiteMode-title);
 }
 
 .profile-skill-name {
@@ -279,10 +283,12 @@ body {
 }
 h2,
 h2-skills {
-  color: aqua;
+  color: rgba(14, 165, 233, 1);
   text-align: center;
+  font-weight: 900;
   margin-bottom: 20px;
   position: relative;
+  letter-spacing: 4px;
   padding-bottom: 10px;
 }
 h2::after,
@@ -292,13 +298,13 @@ h2::after,
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
+  width: 80px;
   height: 2px;
-  background-color: aqua;
+  background-color: rgba(14, 165, 233, 1);
   border-radius: 2px;
 }
 .title-skills {
-  color: aqua;
+  color: rgba(14, 165, 233, 1);
   font-size: 1.2rem;
   margin-bottom: 15px;
   font-weight: 500;
@@ -373,11 +379,11 @@ h2::after,
 .studies-details {
   flex: 1 1 280px;
   max-width: 320px;
+  background-color: rgba(248, 250, 252, 1);
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 15px;
-  background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition:
