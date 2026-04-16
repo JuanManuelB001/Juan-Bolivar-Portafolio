@@ -7,5 +7,17 @@ let storage = localStorage.setItem("darkmode", true);
 darkmode.addEventListener("click", () => {
   let valueStorage = localStorage.getItem("darkmode");
   let darkmode = valueStorage ? "white" : "dark";
-  alert("presionado " + darkmode);
+
+  // NAV
+  console.log(header.classList);
+
+  if (header.classList == "header") {
+    // MODO OSCURO
+    header.classList.remove("header");
+    header.classList.add("header-darkmode");
+  } else {
+    // MODO CLARO
+    header.classList.remove("header-darkmode");
+    header.classList.add("header");
+  }
 });

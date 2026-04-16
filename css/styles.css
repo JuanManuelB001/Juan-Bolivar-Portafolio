@@ -27,6 +27,10 @@ body {
   -webkit-backdrop-filter: blur(12px);
   width: 100%;
 }
+/* MODO OSCURO */
+.header-darkmode {
+  background-color: rgba(17, 24, 39, 1);
+}
 
 .container-nav {
   display: flex;
