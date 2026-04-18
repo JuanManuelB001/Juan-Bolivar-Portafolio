@@ -110,6 +110,26 @@ function putInformation(data) {
     document.querySelector(".studies").innerHTML +=
       ` <div class="studies-details" ><div  class="title-wrapper"><p class="studies-grade">${element.grade}</p> <span class="period">${element.period}</span></div><div class="information" ><span class="title" >${storage ? "Titulo: " : "Title: "}${element.title}</span><span class="university">${storage ? "Universidad: " : "University: "} </span>${element.university}</div></div>`;
   });
+
+  //SECTION-CONTAINER
+  //title
+  const wrapper = document.querySelector(".section-wrapper");
+
+  data.experince_section.experience.jobs.forEach((element) => {
+    const skills = element.abilitys
+      .map((skill) => `<li >${skill}</li>`)
+      .join("");
+
+    wrapper.innerHTML += `
+    <div class="job">
+      <h2>${element.company} <span>${element.jobTitle}</span></h2>
+      <div class="job-data">
+        <p>${element.period}</p>
+        <div class="abilitys"><ul class="skills-list">${skills}</ul></div>
+      </div>
+    </div>
+  `;
+  });
 }
 
 function updatePage() {

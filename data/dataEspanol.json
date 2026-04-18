@@ -98,5 +98,41 @@
     "Mockito",
     "Espresso"
   ],
-  "profileText": "Estudiante de Ingeniería de Sistemas, cursando el octavo semestre, con un perfil orientado a la responsabilidad, la innovación y la mejora continua. Destaco por mi iniciativa, proactividad y capacidad para adaptarme a nuevos desafíos. Poseo excelentes habilidades interpersonales, facilidad para el trabajo en equipo y un enfoque analítico para la resolución de problemas.  Experiencia en desarrollo de software utilizando PHP, <strong>Python</strong>, Java con Spring Boot para backend, Flutter para frontend móvil, y React para frontend web. Manejo de control de versiones con Git y gestión de proyectos en GitHub, aplicando principios de programación orientada a objetos y desarrollo de aplicaciones completas tanto web como móviles."
+  "profileText": "Estudiante de Ingeniería de Sistemas, cursando el octavo semestre, con un perfil orientado a la responsabilidad, la innovación y la mejora continua. Destaco por mi iniciativa, proactividad y capacidad para adaptarme a nuevos desafíos. Poseo excelentes habilidades interpersonales, facilidad para el trabajo en equipo y un enfoque analítico para la resolución de problemas.  Experiencia en desarrollo de software utilizando PHP, <strong>Python</strong>, Java con Spring Boot para backend, Flutter para frontend móvil, y React para frontend web. Manejo de control de versiones con Git y gestión de proyectos en GitHub, aplicando principios de programación orientada a objetos y desarrollo de aplicaciones completas tanto web como móviles.",
+
+  "experince_section": {
+    "experience": {
+      "title": "Experiencia Profesional",
+      "jobs": [
+        {
+          "img": "",
+          "company": "Papas Fritas 2ew",
+          "jobTitle": "job Title",
+          "period": "2023-3001",
+          "abilitys": ["as", "2", "2df", "sdf"]
+        },
+        {
+          "img": "",
+          "company": "Papas Fritaswww 2ew",
+          "jobTitle": "job Title",
+          "period": "2023-3001",
+          "abilitys": ["papas_2", "2", "2df", "sdf"]
+        },
+        {
+          "img": "",
+          "company": "Papas Fritaswww 2ew",
+          "jobTitle": "job Title",
+          "period": "2023-3001",
+          "abilitys": ["papas_2", "2", "2df", "sdf"]
+        },
+        {
+          "img": "",
+          "company": "Papas Fritaswww 2ew",
+          "jobTitle": "job Title",
+          "period": "2023-3001",
+          "abilitys": ["papas_2", "2", "2df", "sdf"]
+        }
+      ]
+    }
+  }
 }
