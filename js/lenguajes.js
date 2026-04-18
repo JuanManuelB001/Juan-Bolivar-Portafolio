@@ -144,4 +144,5 @@ function cleanDom() {
   document.querySelector(".list-databases").innerHTML = "";
   document.querySelector(".tools-container").innerHTML = "";
   document.querySelector(".studies").innerHTML = "";
+  document.querySelector(".section-wrapper").innerHTML = "";
 }
