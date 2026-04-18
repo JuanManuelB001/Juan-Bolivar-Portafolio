@@ -5,9 +5,10 @@
   --whitemode-title: rgba(6, 182, 212, 1);
   --background-whitemode: rgba(248, 250, 252, 1);
   --nav-whitemode: rgba(248, 250, 252, 1);
+  --bar-white-background-por: rgba(6, 182, 212, 1);
   /* DARK MODE*/
 
-  -nav-darkmode: rgba(26, 24, 24, 0.5);
+  --nav-darkmode: rgba(26, 24, 24, 0.5);
 }
 
 * {
@@ -333,7 +334,7 @@ h2::after,
   display: flex;
   list-style: none;
   padding: 2px;
-  margin: 0 0 12px 5px;
+  margin: 10px 10px 12px 5px;
   max-width: 500px;
   align-items: center;
 }
@@ -345,14 +346,15 @@ h2::after,
   padding: 2px;
   font-size: 10px;
   width: 200px;
-  margin: 4px 10px 4px 0;
+  margin: 4px 20px 4px 0;
   position: relative;
   overflow: hidden;
 }
 
 .bar-percentage {
-  background-color: black;
+  background-color: var(--bar-white-background-por);
   border-radius: 4px;
+  padding: 4px;
 }
 .profile-skill-name {
   margin-left: 8px;
