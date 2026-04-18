@@ -9,7 +9,7 @@ function getDataLenguajes() {
   let boton = document.querySelector(".button-lenguajes");
   if (storage == true) {
     // LOAD SPANISH JSON
-    fetch("../data/dataEspanol.json")
+    fetch("/data/dataEspanol.json")
       .then((response) => response.json())
       .then((data) => {
         document.querySelector(".name").textContent = data.name;
@@ -20,7 +20,7 @@ function getDataLenguajes() {
       });
   } else {
     // LOAD ENGLISH JSON
-    fetch("../data/dataEnglish.json")
+    fetch("/data/dataEnglish.json")
       .then((response) => response.json())
       .then((data) => {
         document.getElementById("title").textContent = data.title;
