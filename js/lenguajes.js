@@ -9,7 +9,9 @@ function getDataLenguajes() {
   let boton = document.querySelector(".button-lenguajes");
   if (storage == true) {
     // LOAD SPANISH JSON
-    fetch("/data/dataEspanol.json")
+    fetch(
+      "https://juanmanuelb001.github.io/Juan-Bolivar-Portafolio/data/dataEspanol.json",
+    )
       .then((response) => response.json())
       .then((data) => {
         document.querySelector(".name").textContent = data.name;
@@ -20,7 +22,9 @@ function getDataLenguajes() {
       });
   } else {
     // LOAD ENGLISH JSON
-    fetch("/data/dataEnglish.json")
+    fetch(
+      "/https://juanmanuelb001.github.io/Juan-Bolivar-Portafolio/data/dataEnglish.json",
+    )
       .then((response) => response.json())
       .then((data) => {
         document.getElementById("title").textContent = data.title;
