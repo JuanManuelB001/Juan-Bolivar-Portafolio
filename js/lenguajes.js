@@ -23,7 +23,7 @@ function getDataLenguajes() {
   } else {
     // LOAD ENGLISH JSON
     fetch(
-      "/https://juanmanuelb001.github.io/Juan-Bolivar-Portafolio/data/dataEnglish.json",
+      "https://juanmanuelb001.github.io/Juan-Bolivar-Portafolio/data/dataEnglish.json",
     )
       .then((response) => response.json())
       .then((data) => {
