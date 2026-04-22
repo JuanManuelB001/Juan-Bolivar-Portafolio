@@ -6,9 +6,36 @@ localStorage.setItem("lenguajes", true);
 getDataLenguajes(); // FIRST RUN FUNCTION
 function getDataLenguajes() {
   let storage = JSON.parse(localStorage.getItem("lenguajes"));
-  let boton = document.querySelector(".button-lenguajes");
   if (storage == true) {
     // LOAD SPANISH JSON
+    dataJson("sp");
+  } else {
+    // LOAD ENGLISH JSON
+    dataJson("en");
+  }
+}
+function dataJson(mode) {
+  if (mode == "sp") {
+    spanishData();
+  } else {
+    englishData();
+  }
+}
+
+function spanishData() {
+  let boton = document.querySelector(".button-lenguajes");
+  console.log("spanish");
+  try {
+    fetch("data/dataEspanol.json")
+      .then((response) => response.json())
+      .then((data) => {
+        document.querySelector(".name").textContent = data.name;
+        document.getElementById("title").textContent = data.title;
+        boton.textContent = data.lenguaje;
+        document.querySelector(".profile-summary").innerHTML = data.profileText;
+        putInformation(data);
+      });
+  } catch (Exception) {
     fetch(
       "https://juanmanuelb001.github.io/Juan-Bolivar-Portafolio/data/dataEspanol.json",
     )
@@ -20,8 +47,22 @@ function getDataLenguajes() {
         document.querySelector(".profile-summary").innerHTML = data.profileText;
         putInformation(data);
       });
-  } else {
-    // LOAD ENGLISH JSON
+  }
+}
+
+function englishData() {
+  let boton = document.querySelector(".button-lenguajes");
+  try {
+    fetch("data/dataEnglish.json")
+      .then((response) => response.json())
+      .then((data) => {
+        document.querySelector(".name").textContent = data.name;
+        document.getElementById("title").textContent = data.title;
+        boton.textContent = data.lenguaje;
+        document.querySelector(".profile-summary").innerHTML = data.profileText;
+        putInformation(data);
+      });
+  } catch (Exception) {
     fetch(
       "https://juanmanuelb001.github.io/Juan-Bolivar-Portafolio/data/dataEnglish.json",
     )
@@ -101,6 +142,10 @@ function putInformation(data) {
       `<span class="tool-tag">${element}</span>`;
   });
 
+  // TITLE STUDIES
+  console.log(data);
+  document.querySelector(".professional-experience").textContent =
+    data.profesional_experience;
   // STUDIES
   document.querySelector(".studies-title").textContent = data.studies.title;
   // PREGRADO
