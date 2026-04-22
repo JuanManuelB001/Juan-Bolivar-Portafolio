@@ -24,7 +24,6 @@ function dataJson(mode) {
 
 function spanishData() {
   let boton = document.querySelector(".button-lenguajes");
-  console.log("spanish");
   try {
     fetch("data/dataEspanol.json")
       .then((response) => response.json())
@@ -143,8 +142,7 @@ function putInformation(data) {
   });
 
   // TITLE STUDIES
-  console.log(data);
-  document.querySelector(".professional-experience").textContent =
+  document.querySelector(".professional-experience-title").textContent =
     data.profesional_experience;
   // STUDIES
   document.querySelector(".studies-title").textContent = data.studies.title;
@@ -166,7 +164,7 @@ function putInformation(data) {
 
   data.experince_section.experience.jobs.forEach((element) => {
     const skills = element.abilitys
-      .map((skill) => `<li >${skill}</li>`)
+      .map((skill) => `<li class="tools tool-tag">${skill}</li>`)
       .join("");
 
     wrapper.innerHTML += `
@@ -179,6 +177,9 @@ function putInformation(data) {
     </div>
   `;
   });
+
+  // PORFOLIO
+  document.querySelector(".porfolio-title").textContent = data.Portfolio;
 }
 
 function updatePage() {

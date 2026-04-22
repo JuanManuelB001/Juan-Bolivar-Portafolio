@@ -100,6 +100,7 @@
   ],
   "profileText": " we Need translate de person information--------- Estudiante de Ingeniería de Sistemas, cursando el octavo semestre, con un perfil orientado a la responsabilidad, la innovación y la mejora continua. Destaco por mi iniciativa, proactividad y capacidad para adaptarme a nuevos desafíos. Poseo excelentes habilidades interpersonales, facilidad para el trabajo en equipo y un enfoque analítico para la resolución de problemas.  Experiencia en desarrollo de software utilizando PHP, <strong>Python</strong>, Java con Spring Boot para backend, Flutter para frontend móvil, y React para frontend web. Manejo de control de versiones con Git y gestión de proyectos en GitHub, aplicando principios de programación orientada a objetos y desarrollo de aplicaciones completas tanto web como móviles.",
   "profesional_experience": "Profesional Experience",
+  "Portfolio": "Portfolio",
   "experince_section": {
     "experience": {
       "title": "Experiencia Profesional",
