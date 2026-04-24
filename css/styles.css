@@ -99,6 +99,21 @@ body {
   gap: 20px;
 }
 
+.download-curriculum {
+  border-radius: 25px;
+  padding: 10px 15px;
+  background-color: rgb(30, 118, 22);
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  transition: all 0.4s ease-in-out;
+}
+.download-curriculum:hover {
+  background-color: rgb(35, 151, 24);
+  transform: translateY(-2px);
+}
+
 .button-lenguaje {
   padding: 10px 15px;
   border-radius: 18px;
@@ -386,7 +401,7 @@ h2::after,
     transform: translateX(550%);
   }
 }
-
+/* STUDIES */
 .studies {
   display: flex;
   flex-wrap: wrap;
@@ -452,6 +467,34 @@ h2::after,
 .university {
   display: block;
 }
+
+/* CERTIFICATIONS */
+.certifications {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.certifications-details {
+  flex: 1 1 280px;
+  max-width: 320px;
+  background-color: rgba(248, 250, 252, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-radius 0.2s ease;
+}
+.certification-container {
+  font-size: 12px;
+}
+
 /* MENU MOVIL
 .header-checkbox:checked~.header-nav{
     display: flex;

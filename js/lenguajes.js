@@ -157,6 +157,14 @@ function putInformation(data) {
     document.querySelector(".studies").innerHTML +=
       ` <div class="studies-details" ><div  class="title-wrapper"><p class="studies-grade">${element.grade}</p> <span class="period">${element.period}</span></div><div class="information" ><span class="title" >${storage ? "Titulo: " : "Title: "}${element.title}</span><span class="university">${storage ? "Universidad: " : "University: "} </span>${element.university}</div></div>`;
   });
+  // CERTIFICATIONS
+  document.querySelector(".title-certification").textContent =
+    data.Certification;
+
+  data.experince_section.certifications.forEach((element) => {
+    document.querySelector(".certifications").innerHTML +=
+      ` <div class="certifications-details" ><div  class="title-wrapper certification-container"><p class="studies-grade">${element.organization}</p> <span class="period">${element.year}</span></div><div class="information" ><span class="title" >${storage ? "Titulo: " : "Title: "}${element.title_certification}</span></div></div>`;
+  });
 
   //SECTION-CONTAINER
   //title
@@ -195,4 +203,5 @@ function cleanDom() {
   document.querySelector(".tools-container").innerHTML = "";
   document.querySelector(".studies").innerHTML = "";
   document.querySelector(".section-wrapper").innerHTML = "";
+  document.querySelector(".certifications").innerHTML = "";
 }
