@@ -1,23 +1,39 @@
-let darkmode = document.querySelector(".darkmode-button");
+let darkmodeBtn = document.querySelector(".darkmode-button");
 let header = document.getElementById("header");
-let nav = document.getElementById("header-nav");
+let changeMode = document.querySelector(".darkmode-button");
 
-// LOCAL STORAGE
-let storage = localStorage.setItem("darkmode", true);
-darkmode.addEventListener("click", () => {
-  let valueStorage = localStorage.getItem("darkmode");
-  let darkmode = valueStorage ? "white" : "dark";
+darkmodeBtn.addEventListener("click", () => {
+  let nav_letter = document.querySelectorAll(
+    ".header-nav-item, .header-nav-item-dark",
+  );
 
-  // NAV
-  console.log(header.classList);
-
-  if (header.classList == "header") {
+  if (header.classList.contains("header")) {
     // MODO OSCURO
-    header.classList.remove("header");
-    header.classList.add("header-darkmode");
+    changeMode.classList.replace("darkmode-button", "darkmode-button-dark");
+    header.classList.replace("header", "header-darkmode");
+    changesNameClassDark(nav_letter, "header-nav-item");
   } else {
     // MODO CLARO
-    header.classList.remove("header-darkmode");
-    header.classList.add("header");
+    header.classList.replace("header-darkmode", "header");
+    changeMode.classList.replace("darkmode-button-dark", "darkmode-button");
+    changesNameClassWhite(nav_letter, "header-nav-item");
   }
 });
+
+// WHITE MODE
+function changesNameClassWhite(elements, mode) {
+  let darkMode = mode + "-dark";
+  elements.forEach((element) => {
+    element.classList.remove(darkMode);
+    element.classList.add(mode);
+  });
+}
+
+// DARK MODE
+function changesNameClassDark(elements, mode) {
+  let darkMode = mode + "-dark";
+  elements.forEach((element) => {
+    element.classList.remove(mode);
+    element.classList.add(darkMode);
+  });
+}
