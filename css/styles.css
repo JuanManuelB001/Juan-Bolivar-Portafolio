@@ -107,7 +107,7 @@ body {
   color: #fff;
   font-size: 12px;
   font-weight: 800;
-  transition: all 0.4s ease-in-out;
+  transition: all 0s ease-in-out;
 }
 .download-curriculum:hover {
   background-color: rgb(35, 151, 24);
@@ -694,7 +694,12 @@ h2::after,
     align-items: safe center;
     border-radius: 0 25px 25px 0;
     box-shadow: 0 0 9px #0005;
-    overflow-y: scroll;
+    overflow-y: auto;
+  }
+
+  .profile-data-container::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
   }
 
   .profile-data {
