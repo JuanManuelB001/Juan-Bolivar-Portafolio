@@ -4,6 +4,7 @@ localStorage.setItem("lenguajes", true);
 // UPDATE JSON INFORMATION
 // ESPANOL
 getDataLenguajes(); // FIRST RUN FUNCTION
+
 function getDataLenguajes() {
   let storage = JSON.parse(localStorage.getItem("lenguajes"));
   if (storage == true) {
@@ -24,6 +25,7 @@ function dataJson(mode) {
 
 function spanishData() {
   let boton = document.querySelector(".button-lenguajes");
+
   try {
     fetch("data/dataEspanol.json")
       .then((response) => response.json())
@@ -51,6 +53,7 @@ function spanishData() {
 
 function englishData() {
   let boton = document.querySelector(".button-lenguajes");
+
   try {
     fetch("data/dataEnglish.json")
       .then((response) => response.json())
@@ -78,7 +81,7 @@ function englishData() {
 function changeLenguajes() {
   let isSpanish = JSON.parse(localStorage.getItem("lenguajes"));
   storage = localStorage.setItem("lenguajes", JSON.stringify(!isSpanish));
-
+  console.log(localStorage.getItem("modeWhite"));
   updatePage();
 }
 
