@@ -156,6 +156,7 @@ function putInformation(data) {
     });
   } else {
     // NAV
+
     list_nav = Object.entries(data.nav);
     list_nav.forEach(([key, value]) => {
       document.querySelector(".header-nav-list").innerHTML +=
