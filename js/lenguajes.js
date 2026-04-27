@@ -145,12 +145,23 @@ function changeLenguajes() {
 
 function putInformation(data) {
   let storage = JSON.parse(localStorage.getItem("lenguajes"));
-  // NAV
-  list_nav = Object.entries(data.nav);
-  list_nav.forEach(([key, value]) => {
-    document.querySelector(".header-nav-list").innerHTML +=
-      `<li class="header-nav-item" ><a href="#${key}">${value}</a></li>`;
-  });
+  let mode = JSON.parse(localStorage.getItem("modeWhite"));
+
+  if (mode) {
+    // NAV
+    list_nav = Object.entries(data.nav);
+    list_nav.forEach(([key, value]) => {
+      document.querySelector(".header-nav-list").innerHTML +=
+        `<li class="header-nav-item" ><a href="#${key}">${value}</a></li>`;
+    });
+  } else {
+    // NAV
+    list_nav = Object.entries(data.nav);
+    list_nav.forEach(([key, value]) => {
+      document.querySelector(".header-nav-list").innerHTML +=
+        `<li class="header-nav-item-dark" ><a href="#${key}">${value}</a></li>`;
+    });
+  }
   //INDICATORS
   document.querySelector(".indicator-number").innerHTML =
     data.indicators.num_experiences;
