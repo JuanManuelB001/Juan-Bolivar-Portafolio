@@ -1,6 +1,6 @@
 // LOCALSTORAGE
 localStorage.setItem("lenguajes", true);
-
+localStorage.setItem("modeWhite", true);
 // UPDATE JSON INFORMATION
 // ESPANOL
 getDataLenguajes(); // FIRST RUN FUNCTION

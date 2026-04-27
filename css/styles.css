@@ -218,6 +218,12 @@ body {
   margin: 10px 20px;
   top: 0;
 }
+
+.indicator-label {
+}
+.indicator-label-dark {
+  color: white;
+}
 #title {
   font-family: 2.3rem;
   text-align: center;
