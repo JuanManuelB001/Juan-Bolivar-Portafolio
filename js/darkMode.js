@@ -74,5 +74,4 @@ function changesNameClassDark(elements, mode) {
 function updateLocalStorageMode() {
   let mode = JSON.parse(localStorage.getItem("modeWhite"));
   localStorage.setItem("modeWhite", JSON.stringify(!mode));
-  console.log("Change", !mode);
 }

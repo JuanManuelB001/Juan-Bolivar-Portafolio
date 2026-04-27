@@ -25,63 +25,121 @@ function dataJson(mode) {
 
 function spanishData() {
   let boton = document.querySelector(".button-lenguajes");
-
-  try {
-    fetch("data/dataEspanol.json")
-      .then((response) => response.json())
-      .then((data) => {
-        document.querySelector(".name").textContent = data.name;
-        document.getElementById("title").textContent = data.title;
-        boton.textContent = data.lenguaje;
-        document.querySelector(".profile-summary").innerHTML = data.profileText;
-        putInformation(data);
-      });
-  } catch (Exception) {
-    fetch(
-      "https://juanmanuelb001.github.io/Juan-Bolivar-Portafolio/data/dataEspanol.json",
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        document.querySelector(".name").textContent = data.name;
-        document.getElementById("title").textContent = data.title;
-        boton.textContent = data.lenguaje;
-        document.querySelector(".profile-summary").innerHTML = data.profileText;
-        putInformation(data);
-      });
+  let mode = JSON.parse(localStorage.getItem("modeWhite"));
+  if (mode) {
+    try {
+      fetch("data/dataEspanol.json")
+        .then((response) => response.json())
+        .then((data) => {
+          document.querySelector(".name").textContent = data.name;
+          document.getElementById("title").textContent = data.title;
+          boton.textContent = data.lenguaje;
+          document.querySelector(".profile-summary").innerHTML =
+            data.profileText;
+          putInformation(data);
+        });
+    } catch (Exception) {
+      fetch(
+        "https://juanmanuelb001.github.io/Juan-Bolivar-Portafolio/data/dataEspanol.json",
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          document.querySelector(".name").textContent = data.name;
+          document.getElementById("title").textContent = data.title;
+          boton.textContent = data.lenguaje;
+          document.querySelector(".profile-summary").innerHTML =
+            data.profileText;
+          putInformation(data);
+        });
+    }
+  } else {
+    // MODE DARK CHANGE CLASS NAME
+    try {
+      fetch("data/dataEspanol.json")
+        .then((response) => response.json())
+        .then((data) => {
+          document.querySelector(".name-dark").textContent = data.name;
+          document.getElementById("title").textContent = data.title;
+          boton.textContent = data.lenguaje;
+          document.querySelector(".profile-summary-dark").innerHTML =
+            data.profileText;
+          putInformation(data);
+        });
+    } catch (Exception) {
+      fetch(
+        "https://juanmanuelb001.github.io/Juan-Bolivar-Portafolio/data/dataEspanol.json",
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          document.querySelector(".name").textContent = data.name;
+          document.getElementById("title").textContent = data.title;
+          boton.textContent = data.lenguaje;
+          document.querySelector(".profile-summary").innerHTML =
+            data.profileText;
+          putInformation(data);
+        });
+    }
   }
 }
 
 function englishData() {
   let boton = document.querySelector(".button-lenguajes");
-
-  try {
-    fetch("data/dataEnglish.json")
-      .then((response) => response.json())
-      .then((data) => {
-        document.querySelector(".name").textContent = data.name;
-        document.getElementById("title").textContent = data.title;
-        boton.textContent = data.lenguaje;
-        document.querySelector(".profile-summary").innerHTML = data.profileText;
-        putInformation(data);
-      });
-  } catch (Exception) {
-    fetch(
-      "https://juanmanuelb001.github.io/Juan-Bolivar-Portafolio/data/dataEnglish.json",
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        document.getElementById("title").textContent = data.title;
-        boton.textContent = data.lenguaje;
-        // PUT INFORMATION
-        putInformation(data);
-      });
+  let mode = JSON.parse(localStorage.getItem("modeWhite"));
+  if (mode) {
+    try {
+      fetch("data/dataEnglish.json")
+        .then((response) => response.json())
+        .then((data) => {
+          document.querySelector(".name").textContent = data.name;
+          document.getElementById("title").textContent = data.title;
+          boton.textContent = data.lenguaje;
+          document.querySelector(".profile-summary").innerHTML =
+            data.profileText;
+          putInformation(data);
+        });
+    } catch (Exception) {
+      fetch(
+        "https://juanmanuelb001.github.io/Juan-Bolivar-Portafolio/data/dataEnglish.json",
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          document.getElementById("title").textContent = data.title;
+          boton.textContent = data.lenguaje;
+          // PUT INFORMATION
+          putInformation(data);
+        });
+    }
+  } else {
+    // DARK MODE ACTIVATE
+    try {
+      fetch("data/dataEnglish.json")
+        .then((response) => response.json())
+        .then((data) => {
+          document.querySelector(".name-dark").textContent = data.name;
+          document.getElementById("title").textContent = data.title;
+          boton.textContent = data.lenguaje;
+          document.querySelector(".profile-summary-dark").innerHTML =
+            data.profileText;
+          putInformation(data);
+        });
+    } catch (Exception) {
+      fetch(
+        "https://juanmanuelb001.github.io/Juan-Bolivar-Portafolio/data/dataEnglish.json",
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          document.getElementById("title").textContent = data.title;
+          boton.textContent = data.lenguaje;
+          // PUT INFORMATION
+          putInformation(data);
+        });
+    }
   }
 }
 
 function changeLenguajes() {
   let isSpanish = JSON.parse(localStorage.getItem("lenguajes"));
   storage = localStorage.setItem("lenguajes", JSON.stringify(!isSpanish));
-  console.log(localStorage.getItem("modeWhite"));
   updatePage();
 }
 
