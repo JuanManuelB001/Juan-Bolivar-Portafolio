@@ -26,6 +26,9 @@ darkmodeBtn.addEventListener("click", () => {
   let certifications_details = document.querySelectorAll(
     ".certifications-details, .certifications-details-dark",
   );
+  let studies_grade = document.querySelectorAll(
+    ".studies-grade, .studies-grade-dark",
+  );
 
   if (header.classList.contains("header")) {
     // MODO OSCURO
@@ -38,6 +41,7 @@ darkmodeBtn.addEventListener("click", () => {
     changesNameClassDark(jobs, "card");
     changesNameClassDark(studies_card, "studies-card");
     changesNameClassDark(certifications_details, "certifications-details");
+    changesNameClassDark(studies_grade, "studies-grade");
     name.classList.replace("name", "name-dark");
     profile_data.classList.replace(
       "profile-data-container",
@@ -61,6 +65,7 @@ darkmodeBtn.addEventListener("click", () => {
     changesNameClassWhite(jobs, "card");
     changesNameClassWhite(studies_card, "studies-card");
     changesNameClassWhite(certifications_details, "certifications-details");
+    changesNameClassWhite(studies_grade, "studies-grade");
     profile_data.classList.replace(
       "profile-data-container-dark",
       "profile-data-container",

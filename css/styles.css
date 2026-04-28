@@ -10,6 +10,7 @@
   --background-span: rgba(6, 182, 212, 1);
   --background-white: #fff;
   --titleWhite: rgb(11, 10, 10);
+  --period: rgb(16, 98, 213);
   /* DARK MODE*/
 
   --nav-darkmode: rgba(4, 23, 45, 0.5);
@@ -519,6 +520,20 @@ h2::after,
     box-shadow 0.25s ease,
     border-radius 0.2s ease;
 }
+.studies-grade {
+  color: var(--background-section-container);
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.studies-grade-dark {
+  color: var(--background-white);
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.information {
+  color: var(--background-section-container);
+}
 
 .studies-card-dark {
   flex: 1 1 280px;
@@ -594,7 +609,7 @@ h2::after,
 
 /* BADGE DEL AÑO */
 .period {
-  background-color: aqua;
+  background-color: var(--period);
   padding: 6px 10px;
   border-radius: 999px;
   color: #000;
