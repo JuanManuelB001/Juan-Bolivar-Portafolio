@@ -432,12 +432,20 @@ h2::after,
 }
 
 .title-skills {
-  color: rgba(14, 165, 233, 1);
+  color: var(--period);
   font-size: 1.2rem;
   margin-bottom: 15px;
   font-weight: 500;
   padding-left: 10px;
-  border-left: 3px solid #0005;
+  border-left: 3px solid var(--period);
+}
+.title-skills-dark {
+  color: var(--period-dark);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+  padding-left: 10px;
+  border-left: 3px solid var(--period-dark);
 }
 
 .profile-skill {
@@ -462,15 +470,31 @@ h2::after,
 }
 
 .bar-percentage {
-  background-color: var(--bar-white-background-por);
+  background-color: var(--period);
   border-radius: 4px;
   padding: 4px;
 }
+
+.bar-percentage-dark {
+  background-color: var(--indicator-white);
+  border-radius: 4px;
+  padding: 4px;
+}
+
 .profile-skill-name {
+  color: var(--period);
   margin-left: 8px;
   font-size: 1.2rem;
   letter-spacing: 4px;
 }
+
+.profile-skill-name-dark {
+  color: var(--period-dark);
+  margin-left: 8px;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+}
+
 .load-bar::before {
   content: "";
   position: absolute;
@@ -809,17 +833,34 @@ h2::after,
 }
 
 .tool-tag {
-  background-color: aqua;
+  background-color: rgba(0, 0, 0, 0.2);
   border: none;
   outline: none;
   color: black;
+  padding: 2px 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease-out;
+}
+
+.tool-tag-dark {
+  background-color: var(--card-dark);
+  border: none;
+  outline: none;
+  color: rgb(255, 251, 251);
+  padding: 2px 10px;
   border-radius: 20px;
   transition: all 0.3s ease-out;
 }
 
 .tool-tag:hover {
   transform: translatey(-5px);
-  background-color: aquamarine;
+  background-color: var(--period);
+  color: white;
+}
+
+.tool-tag-dark:hover {
+  transform: translatey(-5px);
+  background-color: var(--period);
   color: white;
 }
 

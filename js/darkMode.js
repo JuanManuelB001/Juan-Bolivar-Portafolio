@@ -33,6 +33,16 @@ darkmodeBtn.addEventListener("click", () => {
     ".information, .information-dark",
   );
   let period = document.querySelectorAll(".period, .period-dark");
+  let bar_percentage = document.querySelectorAll(
+    ".bar-percentage, .bar-percentage-dark",
+  );
+  let title_skills = document.querySelectorAll(
+    ".title-skills, .title-skills-dark",
+  );
+  let profile_skill_name = document.querySelectorAll(
+    ".profile-skill-name, .profile-skill-name-dark",
+  );
+  let tool_tag = document.querySelectorAll(".tool-tag, .tool-tag-dark");
 
   if (header.classList.contains("header")) {
     // MODO OSCURO
@@ -48,6 +58,10 @@ darkmodeBtn.addEventListener("click", () => {
     changesNameClassDark(studies_grade, "studies-grade");
     changesNameClassDark(information, "information");
     changesNameClassDark(period, "period");
+    changesNameClassDark(bar_percentage, "bar-percentage");
+    changesNameClassDark(title_skills, "title-skills");
+    changesNameClassDark(profile_skill_name, "profile-skill-name");
+    changesNameClassDark(tool_tag, "tool-tag");
     name.classList.replace("name", "name-dark");
     profile_data.classList.replace(
       "profile-data-container",
@@ -74,6 +88,10 @@ darkmodeBtn.addEventListener("click", () => {
     changesNameClassWhite(studies_grade, "studies-grade");
     changesNameClassWhite(information, "information");
     changesNameClassWhite(period, "period");
+    changesNameClassWhite(bar_percentage, "bar-percentage");
+    changesNameClassWhite(title_skills, "title-skills");
+    changesNameClassWhite(profile_skill_name, "profile-skill-name");
+    changesNameClassWhite(tool_tag, "tool-tag");
     profile_data.classList.replace(
       "profile-data-container-dark",
       "profile-data-container",
