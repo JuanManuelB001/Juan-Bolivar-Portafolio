@@ -15,6 +15,8 @@
   --nav-darkmode: rgba(4, 23, 45, 0.5);
   --background-darkmode: rgba(10, 20, 75, 0.6);
   --indicator-dark: rgb(219, 233, 247);
+  --title-dark: #3b82f6;
+  --background-section-container: #0f172a;
 }
 
 * {
@@ -379,7 +381,7 @@ body {
   margin-bottom: 20px;
 }
 h2,
-h2-skills {
+h2-skills .title {
   color: var(--whitemode-title);
   text-align: center;
   font-weight: 900;
@@ -388,8 +390,33 @@ h2-skills {
   letter-spacing: 4px;
   padding-bottom: 10px;
 }
+.title-dark,
+.h2-skills-dark {
+  color: var(--title-dark);
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 20px;
+  position: relative;
+  letter-spacing: 4px;
+  padding-bottom: 10px;
+}
+
+.title-dark::after,
+.h2-skills-dark::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background-color: var(--title-dark);
+  border-radius: 2px;
+}
+
 h2::after,
-.h2-skills::after {
+.h2-skills::after,
+.title:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -400,6 +427,7 @@ h2::after,
   background-color: rgba(14, 165, 233, 1);
   border-radius: 2px;
 }
+
 .title-skills {
   color: rgba(14, 165, 233, 1);
   font-size: 1.2rem;
@@ -479,6 +507,7 @@ h2::after,
   max-width: 320px;
   background-color: rgba(248, 250, 252, 1);
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 15px;
   padding: 15px;
@@ -490,9 +519,25 @@ h2::after,
     border-radius 0.2s ease;
 }
 
+.studies-details::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 2px;
+  background-color: var(--bar-white-background-por);
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
 .studies-details:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.studies-details:hover::after {
+  opacity: 1;
 }
 
 .professional-experience {
@@ -660,6 +705,20 @@ h2::after,
   background-color: var(--background-whitemode);
 }
 
+.section-container-dark {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1400px;
+  width: 95%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 10px;
+  background-color: var(--background-section-container);
+}
+
 .section-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -668,13 +727,19 @@ h2::after,
   width: 100%;
 }
 
-.job {
+.job-card {
   background: #fff;
   border-radius: 10px;
   width: 100%;
   padding: 15px;
 }
 
+.job-card-dark {
+  background: #1e293b;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+}
 .job-data p {
   text-align: center;
 }

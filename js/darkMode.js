@@ -5,8 +5,9 @@ let changeMode = document.querySelector(".darkmode-button");
 let profile_data = document.querySelector(".profile-data-container");
 let name = document.querySelector(".name");
 let profileSumarry = document.querySelector(".profile-summary ");
-
+let section_container = document.querySelector(".section-container");
 const body = document.body;
+
 darkmodeBtn.addEventListener("click", () => {
   let indicators_number = document.querySelectorAll(
     ".indicators-number, .indicators-number-dark",
@@ -17,6 +18,8 @@ darkmodeBtn.addEventListener("click", () => {
   let nav_letter = document.querySelectorAll(
     ".header-nav-item, .header-nav-item-dark",
   );
+  let jobs = document.querySelectorAll(".job-card, job-card-dark");
+  let title = document.querySelectorAll(".title, title-dark");
 
   if (header.classList.contains("header")) {
     // MODO OSCURO
@@ -25,10 +28,16 @@ darkmodeBtn.addEventListener("click", () => {
     changesNameClassDark(nav_letter, "header-nav-item");
     changesNameClassDark(indicator_label, "indicator-label");
     changesNameClassDark(indicators_number, "indicators-number");
+    changesNameClassDark(title, "title");
+    changesNameClassDark(jobs, "job-card");
     name.classList.replace("name", "name-dark");
     profile_data.classList.replace(
       "profile-data-container",
       "profile-data-container-dark",
+    );
+    section_container.classList.replace(
+      "section-container",
+      "section-container-dark",
     );
     profileSumarry.classList.replace("profile-summary", "profile-summary-dark");
 
@@ -41,12 +50,17 @@ darkmodeBtn.addEventListener("click", () => {
     changesNameClassWhite(nav_letter, "header-nav-item");
     changesNameClassWhite(indicator_label, "indicator-label");
     changesNameClassWhite(indicators_number, "indicators-number");
+    changesNameClassWhite(jobs, "job-card");
     profile_data.classList.replace(
       "profile-data-container-dark",
       "profile-data-container",
     );
     name.classList.replace("name-dark", "name");
     profileSumarry.classList.replace("profile-summary-dark", "profile-summary");
+    section_container.classList.replace(
+      "section-container-dark",
+      "section-container",
+    );
 
     // UPDATE LOCAL STORAGE
     updateLocalStorageMode();
