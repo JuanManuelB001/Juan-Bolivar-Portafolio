@@ -17,6 +17,7 @@
   --indicator-dark: rgb(219, 233, 247);
   --title-dark: #3b82f6;
   --background-section-container: #0f172a;
+  --card-dark: rgba(255, 255, 255, 0.05);
 }
 
 * {
@@ -502,7 +503,7 @@ h2::after,
 }
 
 /* CARD */
-.studies-details {
+.studies-card {
   flex: 1 1 280px;
   max-width: 320px;
   background-color: rgba(248, 250, 252, 1);
@@ -519,7 +520,37 @@ h2::after,
     border-radius 0.2s ease;
 }
 
-.studies-details::after {
+.studies-card-dark {
+  flex: 1 1 280px;
+  max-width: 320px;
+  background-color: var(--card-dark);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px rgba(14, 165, 233, 1);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-radius 0.2s ease;
+}
+
+.studies-card-dark::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 2px;
+  background-color: var(--card-dark);
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.studies-card::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -531,12 +562,21 @@ h2::after,
   opacity: 0;
   transition: opacity 0.2s ease-in;
 }
-
-.studies-details:hover {
+.studies-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
-.studies-details:hover::after {
+
+.studies-card-dark:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(14, 165, 233, 1);
+}
+
+.studies-card:hover::after {
+  opacity: 1;
+}
+
+.studies-card:hover::after {
   opacity: 1;
 }
 
@@ -589,6 +629,7 @@ h2::after,
   max-width: 320px;
   background-color: rgba(248, 250, 252, 1);
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 15px;
   padding: 15px;
@@ -599,6 +640,63 @@ h2::after,
     box-shadow 0.25s ease,
     border-radius 0.2s ease;
 }
+
+.certifications-details-dark {
+  flex: 1 1 280px;
+  max-width: 320px;
+  background-color: var(--card-dark);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 4px rgba(14, 165, 233, 1);
+  border-radius: 12px;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-radius 0.2s ease;
+}
+
+.certifications-details::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 1.5px;
+  opacity: 0;
+  background-color: rgba(14, 165, 233, 1);
+  transition: opacity 0.2s ease-in;
+}
+
+.certifications-details-dark::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.certifications-details:hover {
+  transform: translateY(-10px);
+}
+
+.certifications-details-dark:hover {
+  transform: translateY(-10px);
+}
+.certifications-details:hover::after {
+  opacity: 1;
+}
+
+.certifications-details-dark:hover {
+  opacity: 1;
+  box-shadow: 0 10px 25px rgba(14, 165, 233, 1);
+}
+
 .certification-container {
   font-size: 12px;
 }
@@ -727,15 +825,15 @@ h2::after,
   width: 100%;
 }
 
-.job-card {
+.card {
   background: #fff;
   border-radius: 10px;
   width: 100%;
   padding: 15px;
 }
 
-.job-card-dark {
-  background: #1e293b;
+.card-dark {
+  background: var(--card-dark);
   border-radius: 10px;
   width: 100%;
   padding: 15px;

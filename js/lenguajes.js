@@ -222,13 +222,13 @@ function putInformation(data) {
   // PREGRADO
   data.studies.grade.forEach((element) => {
     document.querySelector(".studies").innerHTML +=
-      ` <div class="studies-details" ><div  class="title-wrapper"><p class="studies-grade">${element.grade}</p> <span class="period">${element.period}</span></div><div class="information" ><span class="title-grade" >${storage ? "Titulo: " : "Title: "}${element.title}</span><span class="university">${storage ? "Universidad: " : "University: "} </span>${element.university}</div></div>`;
+      ` <div class="studies-card" ><div  class="title-wrapper"><p class="studies-grade">${element.grade}</p> <span class="period">${element.period}</span></div><div class="information" ><span class="title-grade" >${storage ? "Titulo: " : "Title: "}${element.title}</span><span class="university">${storage ? "Universidad: " : "University: "} </span>${element.university}</div></div>`;
   });
   // POS-GRADO
 
   data.studies.postgraduate.forEach((element) => {
     document.querySelector(".studies").innerHTML +=
-      ` <div class="studies-details" ><div  class="title-wrapper"><p class="studies-grade">${element.grade}</p> <span class="period">${element.period}</span></div><div class="information" ><span class="title-grade" >${storage ? "Titulo: " : "Title: "}${element.title}</span><span class="university">${storage ? "Universidad: " : "University: "} </span>${element.university}</div></div>`;
+      ` <div class=" studies-card" ><div  class="title-wrapper"><p class="studies-grade">${element.grade}</p> <span class="period">${element.period}</span></div><div class="information" ><span class="title-grade" >${storage ? "Titulo: " : "Title: "}${element.title}</span><span class="university">${storage ? "Universidad: " : "University: "} </span>${element.university}</div></div>`;
   });
   // CERTIFICATIONS
   document.querySelector(".title-certification").textContent =
@@ -236,7 +236,7 @@ function putInformation(data) {
 
   data.experince_section.certifications.forEach((element) => {
     document.querySelector(".certifications").innerHTML +=
-      ` <div class="certifications-details" ><div  class="title-wrapper certification-container"><p class="studies-grade">${element.organization}</p> <span class="period">${element.year}</span></div><div class="information" ><span class="title" >${storage ? "Titulo: " : "Title: "}${element.title_certification}</span></div></div>`;
+      ` <div class="certifications-details" ><div  class="title-wrapper certification-container"><p class="studies-grade">${element.organization}</p> <span class="period">${element.year}</span></div><div class="information" ><span class="title-certification" >${storage ? "Titulo: " : "Title: "}${element.title_certification}</span></div></div>`;
   });
 
   //SECTION-CONTAINER
@@ -249,7 +249,7 @@ function putInformation(data) {
       .join("");
 
     wrapper.innerHTML += `
-    <div class="job-card">
+    <div class="card">
       <h2>${element.company} <span>${element.jobTitle}</span></h2>
       <div class="job-data">
         <p>${element.period}</p>
