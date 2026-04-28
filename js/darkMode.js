@@ -29,6 +29,10 @@ darkmodeBtn.addEventListener("click", () => {
   let studies_grade = document.querySelectorAll(
     ".studies-grade, .studies-grade-dark",
   );
+  let information = document.querySelectorAll(
+    ".information, .information-dark",
+  );
+  let period = document.querySelectorAll(".period, .period-dark");
 
   if (header.classList.contains("header")) {
     // MODO OSCURO
@@ -42,6 +46,8 @@ darkmodeBtn.addEventListener("click", () => {
     changesNameClassDark(studies_card, "studies-card");
     changesNameClassDark(certifications_details, "certifications-details");
     changesNameClassDark(studies_grade, "studies-grade");
+    changesNameClassDark(information, "information");
+    changesNameClassDark(period, "period");
     name.classList.replace("name", "name-dark");
     profile_data.classList.replace(
       "profile-data-container",
@@ -66,6 +72,8 @@ darkmodeBtn.addEventListener("click", () => {
     changesNameClassWhite(studies_card, "studies-card");
     changesNameClassWhite(certifications_details, "certifications-details");
     changesNameClassWhite(studies_grade, "studies-grade");
+    changesNameClassWhite(information, "information");
+    changesNameClassWhite(period, "period");
     profile_data.classList.replace(
       "profile-data-container-dark",
       "profile-data-container",
