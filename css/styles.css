@@ -100,17 +100,27 @@ body {
 .header-nav-item-dark a {
   color: rgb(219, 223, 228);
   text-decoration: none;
-  transition: all 0.2s ease-out;
+  transition: all 0.9s ease-out box-shadow 4s ease-in-out;
 }
 
-.header-nav-item :is(:hover, :active) {
+.header-nav-item :is(:hover) {
   color: rgba(15, 23, 42, 1);
   text-decoration: underline;
+  transform: translateY(-2px);
+}
+.header-nav-item :is(:active) {
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.8);
+  background-color: rgba(59, 130, 246, 0.4);
 }
 
-.header-nav-item-dark :is(:hover, :active) {
+.header-nav-item-dark :is(:hover) {
   color: rgb(239, 242, 248);
   text-decoration: underline;
+}
+
+.header-nav-item-dark :is(:active) {
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.8);
+  background-color: rgba(59, 130, 246, 0.4);
 }
 
 .header-logo:hover {
