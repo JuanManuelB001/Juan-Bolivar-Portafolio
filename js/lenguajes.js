@@ -252,7 +252,7 @@ function putInformation(data) {
     <div class="card">
       <h2>${element.company} <span>${element.jobTitle}</span></h2>
       <div class="job-data">
-        <p>${element.period}</p>
+        <p class="job-period">${element.period}</p>
         <div class="abilitys"><ul class="skills-list">${skills}</ul></div>
       </div>
     </div>
