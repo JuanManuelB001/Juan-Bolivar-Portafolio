@@ -261,9 +261,37 @@ function putInformation(data) {
     </div>
   `;
   });
-
+  // PATH IMG PROJECT
+  const img_path = "../img/portfolio/img/";
+  const gif_path = "../img/portfolio/gif/";
   // PORFOLIO
   document.querySelector(".porfolio-title").textContent = data.Portfolio;
+  const portfolio_wrapper = document.querySelector(".portfolio-wrapper");
+  data.portfolio_card.forEach((element) => {
+    const container = element.tech
+      .map((elem_tech) => `<li class="tools tool-tag" >${elem_tech}</li>`)
+      .join("");
+    portfolio_wrapper.innerHTML += `
+        <div class="card">
+    <h2>${element.title}</h2>
+    
+    <div class="abitiys">
+      
+      <div class="card-container">
+        <div class="img-container">
+          <img class="card-img" src=${img_path}${element.img} data-gif=${gif_path}${element.gif}  data-static=${img_path}${element.img} alt="${element.title}">
+        </div>
+      </div>
+
+      <ul class="skills-list">
+        ${container}
+      </ul>
+
+    </div>
+  </div>
+      `;
+  });
+  activarHoverGif();
 }
 
 function updatePage() {

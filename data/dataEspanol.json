@@ -148,5 +148,19 @@
         "year": "2026"
       }
     ]
-  }
+  },
+  "portfolio_card": [
+    {
+      "title": "App",
+      "tech": ["Python", "DataAnalitics", "React"],
+      "img": "image1.png",
+      "gif": "dog.gif"
+    },
+    {
+      "title": "Convert-Money",
+      "tech": ["Python", "DataAnalitics", "React"],
+      "img": "image1.png",
+      "gif": "dog.gif"
+    }
+  ]
 }
