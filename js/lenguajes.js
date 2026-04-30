@@ -3,7 +3,10 @@ localStorage.setItem("lenguajes", true);
 localStorage.setItem("modeWhite", true);
 // UPDATE JSON INFORMATION
 // ESPANOL
-getDataLenguajes(); // FIRST RUN FUNCTION
+
+document.addEventListener("DOMContentLoaded", () => {
+  getDataLenguajes(); // FIRST RUN FUNCTION
+});
 
 function getDataLenguajes() {
   let storage = JSON.parse(localStorage.getItem("lenguajes"));

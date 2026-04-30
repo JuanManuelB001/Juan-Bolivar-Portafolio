@@ -6,7 +6,7 @@ let profile_data = document.querySelector(".profile-data-container");
 let name = document.querySelector(".name");
 let profileSumarry = document.querySelector(".profile-summary ");
 let section_container = document.querySelector(".section-container");
-
+let portfolio_container = document.querySelector(".portfolio-container");
 const body = document.body;
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -78,6 +78,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "profile-summary",
         "profile-summary-dark",
       );
+      portfolio_container.classList.replace(
+        "portfolio-container",
+        "portfolio-container-dark",
+      );
+
       // UPDATE LOCAL STORAGE
       updateLocalStorageMode();
     } else {
@@ -110,6 +115,10 @@ document.addEventListener("DOMContentLoaded", () => {
       section_container.classList.replace(
         "section-container-dark",
         "section-container",
+      );
+      portfolio_container.classList.replace(
+        "portfolio-container-dark",
+        "portfolio-container",
       );
 
       // UPDATE LOCAL STORAGE

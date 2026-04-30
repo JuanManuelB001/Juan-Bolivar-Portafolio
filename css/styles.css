@@ -970,6 +970,16 @@ h2::after,
   background-color: var(--background-whitemode);
 }
 
+.Portfolio-container-dark {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 95%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-section-container);
+}
+
 @container header (min-width: 600px) {
   .header-nav {
     display: block;
