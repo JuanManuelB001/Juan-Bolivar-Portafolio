@@ -46,6 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     let tool_tag = document.querySelectorAll(".tool-tag, .tool-tag-dark");
     let job_period = document.querySelectorAll(".job-period, .job-period-dark");
+    let card_description = document.querySelectorAll(
+      ".card-description, .card-description-dark",
+    );
+
     if (header.classList.contains("header")) {
       // MODO OSCURO
       changeMode.classList.replace("darkmode-button", "darkmode-button-dark");
@@ -65,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
       changesNameClassDark(profile_skill_name, "profile-skill-name");
       changesNameClassDark(tool_tag, "tool-tag");
       changesNameClassDark(job_period, "job-period");
+      changesNameClassDark(card_description, "card-description");
       name.classList.replace("name", "name-dark");
       profile_data.classList.replace(
         "profile-data-container",
@@ -103,6 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
       changesNameClassWhite(profile_skill_name, "profile-skill-name");
       changesNameClassWhite(tool_tag, "tool-tag");
       changesNameClassWhite(job_period, "job-period");
+      changesNameClassWhite(card_description, "card-description");
       profile_data.classList.replace(
         "profile-data-container-dark",
         "profile-data-container",

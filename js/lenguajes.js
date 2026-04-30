@@ -272,23 +272,28 @@ function putInformation(data) {
       .map((elem_tech) => `<li class="tools tool-tag" >${elem_tech}</li>`)
       .join("");
     portfolio_wrapper.innerHTML += `
-        <div class="card">
-    <h2>${element.title}</h2>
+    <div class="card">
+      <h2>${element.title}</h2>
     
-    <div class="abitiys">
-      
-      <div class="card-container">
-        <div class="img-container">
-          <img class="card-img" src=${img_path}${element.img} data-gif=${gif_path}${element.gif}  data-static=${img_path}${element.img} alt="${element.title}">
+      <div class="abitiys">
+        
+        <div class="card-container">
+          <div class="img-container">
+            <img class="card-img" src=${img_path}${element.img} data-gif=${gif_path}${element.gif}  data-static=${img_path}${element.img} alt="${element.title}">
+          </div>
         </div>
+
+        <ul class="skills-list">
+          ${container}
+        </ul>
+
       </div>
-
-      <ul class="skills-list">
-        ${container}
-      </ul>
-
+      <div>
+        <p class="card-description">
+          ${element.description}
+        </p>
+      </div>
     </div>
-  </div>
       `;
   });
   activarHoverGif();
