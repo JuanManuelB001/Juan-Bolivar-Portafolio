@@ -277,7 +277,10 @@ function putInformation(data) {
         
         <div class="card-container">
           <div class="img-container">
-            <img class="card-img" src=${getImgPath(element.img)} data-gif=${getGifPath(element.gif)}  data-static=${getImgPath(element.img)}alt="${element.title}">
+            <img class="card-img" src="${getImgPath(element.img)}"
+           data-gif="${getGifPath(element.gif)}"  
+           data-static="${getImgPath(element.img)}"
+           alt="${element.title}}">
           </div>
         </div>
 
