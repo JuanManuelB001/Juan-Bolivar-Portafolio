@@ -261,9 +261,7 @@ function putInformation(data) {
     </div>
   `;
   });
-  // PATH IMG PROJECT
-  const img_path = "../img/portfolio/img/";
-  const gif_path = "../img/portfolio/gif/";
+
   // PORFOLIO
   document.querySelector(".porfolio-title").textContent = data.Portfolio;
   const portfolio_wrapper = document.querySelector(".portfolio-wrapper");
@@ -279,7 +277,7 @@ function putInformation(data) {
         
         <div class="card-container">
           <div class="img-container">
-            <img class="card-img" src=${getImgPath(element.img)} data-gif=${gif_path}${element.gif}  data-static=${img_path}${element.img} alt="${element.title}">
+            <img class="card-img" src=${getImgPath(element.img)} data-gif=${getGifPath(element.gif)}  data-static=${getImgPath(element.img)}alt="${element.title}">
           </div>
         </div>
 
