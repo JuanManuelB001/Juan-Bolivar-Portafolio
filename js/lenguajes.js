@@ -166,6 +166,11 @@ function putInformation(data) {
         `<li class="header-nav-item-dark" ><a href="#${key}">${value}</a></li>`;
     });
   }
+  document.querySelectorAll(".header-nav a").forEach((link) => {
+    link.addEventListener("click", () => {
+      document.getElementById("open-menu").checked = false;
+    });
+  });
   //INDICATORS
   document.querySelector(".indicator-number").innerHTML =
     data.indicators.num_experiences;

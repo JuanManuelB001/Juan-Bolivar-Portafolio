@@ -1096,3 +1096,167 @@ h2::after,
     max-width: 620px;
   }
 }
+
+/* =========================
+   MOBILE FIRST FIXES
+========================= */
+
+.header-open-nav-button {
+  position: static;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+/* NAV MOBILE BASE */
+.header-nav {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* cuando se abre el menú */
+.header-checkbox:checked ~ .header-nav {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* lista móvil */
+.header-nav-list {
+  flex-direction: column;
+  gap: 25px;
+  height: auto;
+  padding: 20px;
+}
+
+/* BOTONES HEADER EN MOBILE */
+.header-button-container {
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   PROFILE MOBILE
+========================= */
+
+.profile-wrapper {
+  flex-direction: column;
+  height: auto;
+}
+
+.profile-img-container {
+  max-width: 100%;
+  border-radius: 0;
+}
+
+.profile-img {
+  max-width: 100%;
+  border-radius: 0;
+}
+
+/* =========================
+   GRID MOBILE FIX
+========================= */
+
+.section-wrapper {
+  grid-template-columns: 1fr;
+}
+
+.portfolio-wrapper {
+  grid-template-columns: 1fr;
+}
+
+/* STUDIES MOBILE */
+.studies {
+  justify-content: center;
+}
+
+/* CARDS FULL WIDTH MOBILE */
+.studies-card,
+.certifications-details {
+  max-width: 100%;
+  flex: 1 1 100%;
+}
+
+/* =========================
+   TEXTO MÁS LEGIBLE EN MOBILE
+========================= */
+
+.name {
+  font-size: 2rem;
+}
+
+.indicators-number {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  /* HEADER DESKTOP */
+  .header-open-nav-button {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex !important;
+    position: static;
+    background: transparent;
+    height: auto;
+    width: auto;
+  }
+
+  .header-nav-list {
+    flex-direction: row;
+    gap: 20px;
+    height: auto;
+  }
+
+  /* PROFILE DESKTOP */
+  .profile-wrapper {
+    flex-direction: row;
+    height: 95vh;
+  }
+
+  .profile-img-container {
+    max-width: 450px;
+  }
+
+  .profile-img {
+    max-width: 450px;
+    border-radius: 25px 0 0 25px;
+  }
+
+  /* DATA CONTAINER */
+  .profile-data-container {
+    background-color: var(--background-white);
+    border-radius: 0 25px 25px 0;
+  }
+
+  /* GRID DESKTOP */
+  .section-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .studies {
+    justify-content: flex-start;
+  }
+
+  .studies-card,
+  .certifications-details {
+    max-width: 320px;
+  }
+
+  /* TEXT SIZES DESKTOP */
+  .name {
+    font-size: 3.2rem;
+  }
+
+  .indicators-number {
+    font-size: 2.2rem;
+  }
+}
