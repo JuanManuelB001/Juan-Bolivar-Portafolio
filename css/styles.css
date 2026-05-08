@@ -211,7 +211,10 @@ body {
   transform: scale(1.05);
   transform: rotate(10deg);
 }
-
+.profile-data-container-dark::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
 .darkmode-button:active {
   background-color: rgba(195, 59, 59, 0.5);
   color: #fff;
@@ -242,6 +245,15 @@ body {
 #title {
   font-family: 2.3rem;
   text-align: center;
+  padding: 10px 20px;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
   padding: 10px 20px;
 }
 
@@ -316,7 +328,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--background-whitemode);
+  background-color: transparent;
   max-width: 100%;
 }
 
@@ -761,6 +773,18 @@ h2::after,
   font-size: 12px;
 }
 
+/* MENU MOVIL
+.header-checkbox:checked~.header-nav{
+    display: flex;
+    z-index: 999;
+}
+
+.header-checkbox:checked~.header-open-nav-button{
+    display: flex;
+    z-index: 101;
+}
+*/
+
 .profile-img:hover {
   transform: scale(1.03);
 }
@@ -1042,7 +1066,6 @@ h2::after,
     max-width: 450px;
     border-radius: 25px 0 0 25px;
   }
-
   .profile-data-container {
     background-color: var(--background-white);
     display: flex;
@@ -1052,18 +1075,17 @@ h2::after,
     overflow-y: auto;
   }
 
-  .profile-data-container::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
-  }
-
   .profile-data-container-dark {
-    background-color: var(--background-darkmode);
+    background-color: var(--background-section-container);
     display: flex;
     align-items: safe center;
     border-radius: 0 25px 25px 0;
     box-shadow: 0 0 9px #0005;
     overflow-y: auto;
+  }
+  .profile-data-container::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
   }
 
   .profile-data-container-dark::-webkit-scrollbar {
