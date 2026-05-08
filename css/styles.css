@@ -1012,6 +1012,8 @@ h2::after,
   margin: 10px auto;
 }
 .portfolio-container-dark {
+  container-type: inline-size;
+  container-name: portfolio;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   width: 95%;

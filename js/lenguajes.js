@@ -315,4 +315,5 @@ function cleanDom() {
   document.querySelector(".studies").innerHTML = "";
   document.querySelector(".section-wrapper").innerHTML = "";
   document.querySelector(".certifications").innerHTML = "";
+  document.querySelector(".portfolio-wrapper").innerHTML = "";
 }
