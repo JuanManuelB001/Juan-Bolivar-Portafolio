@@ -773,18 +773,6 @@ h2::after,
   font-size: 12px;
 }
 
-/* MENU MOVIL
-.header-checkbox:checked~.header-nav{
-    display: flex;
-    z-index: 999;
-}
-
-.header-checkbox:checked~.header-open-nav-button{
-    display: flex;
-    z-index: 101;
-}
-*/
-
 .profile-img:hover {
   transform: scale(1.03);
 }
@@ -889,6 +877,8 @@ h2::after,
   border: 1px solid rgba(0, 0, 0, 0.1);
   outline: none;
   border-radius: 10px;
+  container-type: inline-size;
+  container-name: experience;
   background-color: var(--background-whitemode);
 }
 
@@ -907,25 +897,27 @@ h2::after,
 }
 
 .section-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-content: space-around;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
 }
 
 .card {
   background: #fff;
   border-radius: 10px;
-  width: 100%;
+  width: 80%;
   padding: 15px;
+  margin: 10px auto;
 }
 
 .card-dark {
   background: var(--card-dark);
   border-radius: 10px;
-  width: 100%;
+  width: 80%;
   padding: 15px;
+  margin: 10px auto;
 }
 .card-container {
   display: flex;
@@ -998,30 +990,36 @@ h2::after,
 }
 
 /* PORFGOLIO */
-.Portfolio-container {
+
+.portfolio-container {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   width: 95%;
   margin: 30px auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  container-type: inline-size;
+  container-name: portfolio;
   background-color: var(--background-whitemode);
 }
-
-.Portfolio-container-dark {
+/* PORTFOLIO-CARD */
+.portfolio-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 10px auto;
+}
+.portfolio-container-dark {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   width: 95%;
+  flex-direction: column;
   margin: 30px auto;
   display: flex;
   justify-content: center;
   background-color: var(--background-section-container);
-}
-/* PORTFOLIO-CARD */
-.portfolio-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
 }
 
 @container header (min-width: 600px) {
@@ -1066,6 +1064,7 @@ h2::after,
     max-width: 450px;
     border-radius: 25px 0 0 25px;
   }
+
   .profile-data-container {
     background-color: var(--background-white);
     display: flex;
@@ -1095,5 +1094,24 @@ h2::after,
 
   .profile-data {
     max-width: 620px;
+  }
+}
+
+/* EXPERIENCE CONTAINER */
+@container experience (min-width: 760px) {
+  .section-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+/* PORFOLIO CONTAINER*/
+@container portfolio (min-width: 560px) {
+  .portfolio-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
