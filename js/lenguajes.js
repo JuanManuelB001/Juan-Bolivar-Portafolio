@@ -162,7 +162,7 @@ function putInformation(data) {
   list_tools = Object.values(data.tools_technologies);
   list_tools.forEach((element) => {
     document.querySelector(".tools-container").innerHTML +=
-      `<span class="tool-tag">${element}</span>`;
+      `<span class="${mode ? "tool-tag" : "tool-tag-dark"}">${element}</span>`;
   });
 
   // TITLE STUDIES
