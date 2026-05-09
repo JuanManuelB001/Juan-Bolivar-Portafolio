@@ -38,6 +38,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 #profile,
 #portafolio {
   scroll-margin-top: 120px;
@@ -1038,6 +1039,62 @@ h2::after,
   background-color: var(--background-section-container);
 }
 
+.link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  container-type: inline-size;
+  container-name: portfolio;
+}
+
+.link-container a {
+  color: #000;
+  text-decoration: none;
+}
+
+.link-wrapper {
+  width: 40%;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 10px 15px;
+  background-color: var(--period);
+  transition: transform 0.5s ease-in;
+}
+
+.link-wrapper-dark {
+  width: 40%;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 10px 15px;
+  background-color: var(--period-dark);
+  transition: transform 0.5s ease-in;
+}
+
+.link-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.link-wrapper-dark:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px var(--background-white);
+}
+
+.link-wrapper:active {
+  background-color: var(--indicator-white);
+  color: var(--background-white);
+  box-shadow: 0px 10px 20px var(--background-section-container);
+}
+.link-wrapper-dark:active {
+  background-color: var(--period);
+  color: var(--background-section-container);
+  box-shadow: 0px 10px 20px var(--background-white);
+}
+
 @container header (min-width: 600px) {
   .header-nav {
     display: block;
@@ -1130,4 +1187,7 @@ h2::after,
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+}
+
+@container portfolio(min-width: 720px) {
 }

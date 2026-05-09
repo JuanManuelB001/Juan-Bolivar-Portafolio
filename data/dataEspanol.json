@@ -155,21 +155,28 @@
       "tech": ["Python", "DataAnalitics", "React"],
       "img": "image1.png",
       "gif": "dog.gif",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem."
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
+      "link": "https://www.google.com/",
+      "text": "Ver Proyecto"
     },
     {
       "title": "Convert-Money",
       "tech": ["Python", "DataAnalitics", "React"],
       "img": "image1.png",
       "gif": "dog.gif",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem."
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
+      "link": "https://www.google.com/",
+      "text": "Ver Proyecto"
     },
     {
       "title": "Convert-Money",
       "tech": ["Python", "DataAnalitics", "React"],
       "img": "image1.png",
       "gif": "dog.gif",
-      "description": "Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem."
+      "description": "Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
+      "link": "https://www.google.com/",
+      "text": "Ver Proyecto"
     }
-  ]
+  ],
+  "contact": "contacto"
 }

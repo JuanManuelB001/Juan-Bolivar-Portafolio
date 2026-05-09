@@ -43,7 +43,6 @@ function spanishData() {
           .forEach((text) => {
             text.innerHTML = data.profileText;
           });
-        console.log(data.profileText);
         putInformation(data);
       });
   } catch (Exception) {
@@ -242,6 +241,7 @@ function putInformation(data) {
       )
       .join("");
     portfolio_wrapper.innerHTML += `
+    
     <div class"${mode ? "card" : "card-dark"}">
       <h2>${element.title}</h2>
     
@@ -264,12 +264,21 @@ function putInformation(data) {
       <div>
         <p class="${mode ? "card-description" : "card-description-dark"}">
           ${element.description}
-        </p>
+          </p>
+          <div class="link-container">
+            <div class="${mode ? "link-wrapper" : "link-wrapper-dark"}">
+              <a href="${element.link}"><span class="link-text">${element.text}</span></a>
+            </div>
+          </div>
       </div>
     </div>
       `;
   });
   activarHoverGif();
+
+  //CONTACT
+  document.querySelector(".contact-container").innerHTML =
+    `<h2 class="title-contact">${data.contact}</h2>`;
 }
 
 function updatePage() {

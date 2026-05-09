@@ -49,6 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let card_description = document.querySelectorAll(
       ".card-description, .card-description-dark",
     );
+    let link_wrapper = document.querySelectorAll(
+      ".link-wrapper, .link-wrapper-dark",
+    );
 
     if (header.classList.contains("header")) {
       // MODO OSCURO
@@ -70,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
       changesNameClassDark(tool_tag, "tool-tag");
       changesNameClassDark(job_period, "job-period");
       changesNameClassDark(card_description, "card-description");
+      changesNameClassDark(link_wrapper, "link-wrapper");
       name.classList.replace("name", "name-dark");
       profile_data.classList.replace(
         "profile-data-container",
@@ -109,6 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
       changesNameClassWhite(tool_tag, "tool-tag");
       changesNameClassWhite(job_period, "job-period");
       changesNameClassWhite(card_description, "card-description");
+      changesNameClassWhite(link_wrapper, "link-wrapper");
       profile_data.classList.replace(
         "profile-data-container-dark",
         "profile-data-container",
