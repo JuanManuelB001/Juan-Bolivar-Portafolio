@@ -173,13 +173,13 @@ function putInformation(data) {
   // PREGRADO
   data.studies.grade.forEach((element) => {
     document.querySelector(".studies").innerHTML +=
-      ` <div class="studies-card" ><div  class="title-wrapper"><p class="studies-grade">${element.grade}</p> <span class="period">${element.period}</span></div><div class="information" ><span class="title-grade" >${storage ? "Titulo: " : "Title: "}${element.title}</span><span class="university">${storage ? "Universidad: " : "University: "} </span>${element.university}</div></div>`;
+      ` <div class="${mode ? "studies-card" : "studies-card-dark"}" ><div  class="title-wrapper"><p class="${mode ? "studies-grade" : "studies-grade-dark"}">${element.grade}</p> <span class="${mode ? "period" : "period-dark"}">${element.period}</span></div><div class="${mode ? "information" : "information-dark"}"><span class="title-grade" >${storage ? "Titulo: " : "Title: "}${element.title}</span><span class="university">${storage ? "Universidad: " : "University: "} </span>${element.university}</div></div>`;
   });
   // POS-GRADO
 
   data.studies.postgraduate.forEach((element) => {
     document.querySelector(".studies").innerHTML +=
-      ` <div class=" studies-card" ><div  class="title-wrapper"><p class="studies-grade">${element.grade}</p> <span class="period">${element.period}</span></div><div class="information" ><span class="title-grade" >${storage ? "Titulo: " : "Title: "}${element.title}</span><span class="university">${storage ? "Universidad: " : "University: "} </span>${element.university}</div></div>`;
+      ` <div class="${mode ? "studies-card" : "studies-card-dark"}" ><div  class="title-wrapper"><p class="${mode ? "studies-grade" : "studies-grade-dark"}">${element.grade}</p> <span class="${mode ? "period" : "period-dark"}">${element.period}</span></div><div class="${mode ? "information" : "information-dark"}"><span class="title-grade" >${storage ? "Titulo: " : "Title: "}${element.title}</span><span class="university">${storage ? "Universidad: " : "University: "} </span>${element.university}</div></div>`;
   });
   // CERTIFICATIONS
   document.querySelector(".title-certification").textContent =
@@ -187,7 +187,7 @@ function putInformation(data) {
 
   data.experince_section.certifications.forEach((element) => {
     document.querySelector(".certifications").innerHTML +=
-      ` <div class="certifications-details" ><div  class="title-wrapper certification-container"><p class="studies-grade">${element.organization}</p> <span class="period">${element.year}</span></div><div class="information" ><span class="title-certification" >${storage ? "Titulo: " : "Title: "}${element.title_certification}</span></div></div>`;
+      ` <div class="${mode ? "certifications-details" : "certifications-details-dark"}" ><div  class="title-wrapper certification-container"><p class="${mode ? "studies-grade" : "studies-grade-dark"}">${element.organization}</p> <span class="${mode ? "period" : "period-dark"}">${element.year}</span></div><div class="${mode ? "information" : "information-dark"}" ><span class="title-certification" >${storage ? "Titulo: " : "Title: "}${element.title_certification}</span></div></div>`;
   });
 
   //SECTION-CONTAINER
