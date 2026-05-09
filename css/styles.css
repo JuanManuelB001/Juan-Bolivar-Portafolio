@@ -34,6 +34,18 @@ body {
   font-optical-sizing: auto;
 }
 
+/* MOVE TO NAV */
+html {
+  scroll-behavior: smooth;
+}
+#profile,
+#portafolio {
+  scroll-margin-top: 120px;
+}
+
+#experience {
+  scroll-margin-top: 100px;
+}
 /* HEADER SECTION */
 .header {
   display: flex;
