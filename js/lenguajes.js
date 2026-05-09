@@ -236,10 +236,13 @@ function putInformation(data) {
   const portfolio_wrapper = document.querySelector(".portfolio-wrapper");
   data.portfolio_card.forEach((element) => {
     const container = element.tech
-      .map((elem_tech) => `<li class="tools tool-tag" >${elem_tech}</li>`)
+      .map(
+        (elem_tech) =>
+          `<li class="tools ${mode ? "tool-tag" : "tool-tag-dark"}" >${elem_tech}</li>`,
+      )
       .join("");
     portfolio_wrapper.innerHTML += `
-    <div class="card">
+    <div class"${mode ? "card" : "card-dark"}">
       <h2>${element.title}</h2>
     
       <div class="abitiys">
@@ -259,7 +262,7 @@ function putInformation(data) {
 
       </div>
       <div>
-        <p class="card-description">
+        <p class="${mode ? "card-description" : "card-description-dark"}">
           ${element.description}
         </p>
       </div>
