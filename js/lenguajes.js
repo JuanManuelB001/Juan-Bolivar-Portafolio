@@ -32,12 +32,18 @@ function spanishData() {
     fetch("data/dataEspanol.json")
       .then((response) => response.json())
       .then((data) => {
-        document.querySelectorAll(".name, .name-dark").textContent = data.name;
+        document.querySelectorAll(".name, .name-dark").forEach((name) => {
+          name.textContent = data.name;
+        });
+
         document.getElementById("title").textContent = data.title;
         boton.textContent = data.lenguaje;
-        document.querySelectorAll(
-          ".profile-summary, .profile-sumary-dark",
-        ).innerHTML = data.profileText;
+        document
+          .querySelectorAll(".profile-summary, .profile-summary-dark")
+          .forEach((text) => {
+            text.innerHTML = data.profileText;
+          });
+        console.log(data.profileText);
         putInformation(data);
       });
   } catch (Exception) {
@@ -46,12 +52,16 @@ function spanishData() {
     )
       .then((response) => response.json())
       .then((data) => {
-        document.querySelectorAll(".name, name-dark").textContent = data.name;
+        document.querySelectorAll(".name, name-dark").forEach((name) => {
+          name.textContent = data.name;
+        });
         document.getElementById("title").textContent = data.title;
         boton.textContent = data.lenguaje;
-        document.querySelectorAll(
-          ".profile-summary, .profile-sumary-dark",
-        ).innerHTML = data.profileText;
+        document
+          .querySelectorAll(".profile-summary, .profile-summary-dark")
+          .forEach((text) => {
+            text.innerHTML = data.profileText;
+          });
         putInformation(data);
       });
   }
@@ -65,12 +75,16 @@ function englishData() {
     fetch("data/dataEnglish.json")
       .then((response) => response.json())
       .then((data) => {
-        document.querySelectorAll(".name, name-dark").textContent = data.name;
+        document.querySelectorAll(".name, name-dark").forEach((name) => {
+          name.textContent = data.name;
+        });
         document.getElementById("title").textContent = data.title;
         boton.textContent = data.lenguaje;
-        document.querySelectorAll(
-          ".profile-summary, .profile-sumary-dark",
-        ).innerHTML = data.profileText;
+        document
+          .querySelectorAll(".profile-summary, .profile-summary-dark")
+          .forEach((text) => {
+            text.innerHTML = data.profileText;
+          });
         putInformation(data);
       });
   } catch (Exception) {
@@ -79,8 +93,12 @@ function englishData() {
     )
       .then((response) => response.json())
       .then((data) => {
+        document.querySelectorAll(".name, name-dark").textContent = data.name;
         document.getElementById("title").textContent = data.title;
         boton.textContent = data.lenguaje;
+        document.querySelectorAll(
+          ".profile-summary, .profile-summary-dark",
+        ).innerHTML = data.profileText;
         // PUT INFORMATION
         putInformation(data);
       });
@@ -196,14 +214,17 @@ function putInformation(data) {
 
   data.experince_section.experience.jobs.forEach((element) => {
     const skills = element.abilitys
-      .map((skill) => `<li class="tools tool-tag">${skill}</li>`)
+      .map(
+        (skill) =>
+          `<li class="${mode ? "tools tool-tag" : "tools tool-tag-dark"}">${skill}</li>`,
+      )
       .join("");
 
     wrapper.innerHTML += `
-    <div class="card">
+    <div class="${mode ? "card" : "card-dark"}">
       <h2>${element.company} <span>${element.jobTitle}</span></h2>
       <div class="job-data">
-        <p class="job-period">${element.period}</p>
+        <p class="${mode ? "job-period" : "job-period-dark"}">${element.period}</p>
         <div class="abilitys"><ul class="skills-list">${skills}</ul></div>
       </div>
     </div>

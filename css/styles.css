@@ -893,6 +893,8 @@ h2::after,
   border: 1px solid rgba(0, 0, 0, 0.1);
   outline: none;
   border-radius: 10px;
+  container-type: inline-size;
+  container-name: experience;
   background-color: var(--background-section-container);
 }
 
