@@ -266,9 +266,11 @@ function putInformation(data) {
           ${element.description}
           </p>
           <div class="link-container">
-            <div class="${mode ? "link-wrapper" : "link-wrapper-dark"}">
-              <a href="${element.link}"><span class="link-text">${element.text}</span></a>
+           <a href="${element.link}"><span class="link-text">  
+          <div class="${mode ? "link-wrapper" : "link-wrapper-dark"}">
+             ${element.text}</span>
             </div>
+            </a>
           </div>
       </div>
     </div>

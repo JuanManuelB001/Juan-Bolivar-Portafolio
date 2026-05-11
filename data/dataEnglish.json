@@ -151,30 +151,30 @@
   },
   "portfolio_card": [
     {
-      "title": "App",
+      "title": "Estreno-Play",
       "tech": ["Python", "DataAnalitics", "React"],
-      "img": "image1.png",
-      "gif": "dog.gif",
+      "img": "estrenoPlay.png",
+      "gif": "estrenoPlay.gif",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
-      "link": "https://www.google.com/",
+      "link": "https://juanmanuelb001.github.io/Estreno-Play-React/",
       "text": "See Project"
     },
     {
-      "title": "Convert-Money",
+      "title": "Ecommerce Clothes",
       "tech": ["Python", "DataAnalitics", "React"],
-      "img": "image1.png",
-      "gif": "dog.gif",
+      "img": "ecommerceCloth.png",
+      "gif": "ecommerceCloth.gif",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
-      "link": "https://www.google.com/",
+      "link": "https://juanmanuelb001.github.io/Ecommerce-clothes-React/",
       "text": "See Project"
     },
     {
-      "title": "Convert-Money",
+      "title": "Marvel Comics",
       "tech": ["Python", "DataAnalitics", "React"],
-      "img": "image1.png",
-      "gif": "dog.gif",
+      "img": "marvelComic.png",
+      "gif": "marvelComic.gif",
       "description": "Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
-      "link": "https://www.google.com/",
+      "link": "https://juanmanuelb001.github.io/marvel-comic-react/",
       "text": "See Project"
     }
   ],
