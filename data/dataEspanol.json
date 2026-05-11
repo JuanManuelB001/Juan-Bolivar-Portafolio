@@ -153,8 +153,8 @@
     {
       "title": "App",
       "tech": ["Python", "DataAnalitics", "React"],
-      "img": "estrenoPlays.png",
-      "gif": "dog.gif",
+      "img": "estrenoPlay.png",
+      "gif": "estrenoPlay.gif",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
       "link": "https://juanmanuelb001.github.io/Estreno-Play-React/",
       "text": "Ver Proyecto"
