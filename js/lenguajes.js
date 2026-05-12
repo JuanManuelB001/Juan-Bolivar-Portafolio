@@ -222,9 +222,20 @@ function putInformation(data) {
     wrapper.innerHTML += `
     <div class="${mode ? "card" : "card-dark"}">
       <h2>${element.company} <span>${element.jobTitle}</span></h2>
+      <div class="img-wrapper">
+          <div class="img-job-container">
+            <img class="img-job" src="../img/portfolio/job-img/onvacation.png" alt=${element.company}.png>
+          </div>
+      </div>
       <div class="job-data">
         <p class="${mode ? "job-period" : "job-period-dark"}">${element.period}</p>
         <div class="abilitys"><ul class="skills-list">${skills}</ul></div>
+
+        <div class="about-job">
+        <h2>${mode ? "Acerca del Trabajo" : "About Job"}</h2>
+          <p >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit mollitia, aliquam excepturi labore tenetur nostrum quod doloremque expedita vero debitis qui delectus ut eum corporis itaque ratione corrupti iure totam.</p>
+        </div>
       </div>
     </div>
   `;

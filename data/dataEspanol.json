@@ -50,28 +50,9 @@
         "grade": "PreGrado",
         "title": "Ingeniero de Sistemas",
         "university": "Universidad Central"
-      },
-      {
-        "period": "202226",
-        "grade": "PosGrado",
-        "title": "Ingeniero de Industrial",
-        "university": "Universidad Central"
       }
     ],
-    "postgraduate": [
-      {
-        "period": "2019-2026",
-        "grade": "PosGrado",
-        "title": "Ingeniero de Sistemas",
-        "university": "Universidad Central"
-      },
-      {
-        "period": "20886",
-        "grade": "PreGrado",
-        "title": "Magister en pendejadas",
-        "university": "Universidad Central"
-      }
-    ]
+    "postgraduate": []
   },
   "profile_title": "Herramientas y FrameWorks",
   "tools_technologies": [
@@ -98,7 +79,7 @@
     "Mockito",
     "Espresso"
   ],
-  "profileText": "Estudiante de Ingeniería de Sistemas, cursando el octavo semestre, con un perfil orientado a la responsabilidad, la innovación y la mejora continua. Destaco por mi iniciativa, proactividad y capacidad para adaptarme a nuevos desafíos. Poseo excelentes habilidades interpersonales, facilidad para el trabajo en equipo y un enfoque analítico para la resolución de problemas.  Experiencia en desarrollo de software utilizando PHP, <strong>Python</strong>, Java con Spring Boot para backend, Flutter para frontend móvil, y React para frontend web. Manejo de control de versiones con Git y gestión de proyectos en GitHub, aplicando principios de programación orientada a objetos y desarrollo de aplicaciones completas tanto web como móviles.",
+  "profileText": "Estudiante de Ingeniería de Sistemas, Último semestre, con un perfil orientado a la responsabilidad, la innovación y la mejora continua. Destaco por mi iniciativa, proactividad y capacidad para adaptarme a nuevos desafíos. Poseo excelentes habilidades interpersonales, facilidad para el trabajo en equipo y un enfoque analítico para la resolución de problemas.  Experiencia en desarrollo de software utilizando PHP, <strong>Python</strong>, Java con Spring Boot para backend, Flutter para frontend móvil, y React para frontend web. Manejo de control de versiones con Git y gestión de proyectos en GitHub, aplicando principios de programación orientada a objetos y desarrollo de aplicaciones completas tanto web como móviles.",
   "profesional_experience": "Experiencia Profesional",
   "Portfolio": "Portafolio",
   "Certification": "Certificados",
@@ -107,10 +88,10 @@
       "title": "Experiencia Profesional",
       "jobs": [
         {
-          "img": "",
-          "company": "Papas Fritas 2ew",
-          "jobTitle": "job Title",
-          "period": "2023-3001",
+          "img": "onvacation.png",
+          "company": "On-Vacation",
+          "jobTitle": "Soporte Tecnico Nivel 1",
+          "period": "2025-2025",
           "abilitys": ["as", "2", "2df", "sdf"]
         },
         {
