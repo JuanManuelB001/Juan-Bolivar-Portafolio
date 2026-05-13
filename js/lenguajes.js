@@ -224,7 +224,7 @@ function putInformation(data) {
       <h2>${element.company} <span>${element.jobTitle}</span></h2>
       <div class="img-wrapper">
           <div class="img-job-container">
-            <img class="img-job" src="../img/portfolio/job-img/onvacation.png" alt=${element.company}.png>
+            <img class="img-job" src=${getJobImgPath(element.img)} alt=${element.company}.png>
           </div>
       </div>
       <div class="job-data">
