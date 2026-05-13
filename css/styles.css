@@ -885,7 +885,6 @@ h2::after,
   flex-direction: column;
   margin: 0 auto;
   padding: 20px;
-
   width: 98%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   outline: none;
@@ -901,8 +900,7 @@ h2::after,
   flex-direction: column;
   margin: 0 auto;
   padding: 20px;
-  max-width: 1400px;
-  width: 95%;
+  width: 98%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   outline: none;
   border-radius: 10px;
@@ -917,7 +915,7 @@ h2::after,
   flex-direction: column;
   align-items: center;
   align-items: stretch;
-  width: 95%;
+  width: 100%;
 }
 
 .card {
@@ -1220,13 +1218,22 @@ h2::after,
 /* EXPERIENCE CONTAINER */
 @container experience (min-width: 760px) {
   .section-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
     width: 100%;
   }
+  .card {
+    width: 700px;
+    max-width: 800px;
+  }
+  .card-dark {
+    width: 700px;
+    max-width: 800px;
+  }
 }
+
 /* PORFOLIO CONTAINER*/
 @container portfolio (min-width: 560px) {
   .portfolio-wrapper {
