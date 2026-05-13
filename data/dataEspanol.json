@@ -157,6 +157,15 @@
       "description": "Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
       "link": "https://juanmanuelb001.github.io/marvel-comic-react/",
       "text": "Ver Proyecto"
+    },
+    {
+      "title": "Search Country",
+      "tech": ["Python", "DataAnalitics", "React"],
+      "img": "country.png",
+      "gif": "country.gif",
+      "description": "Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
+      "link": "https://juanmanuelb001.github.io/Search-country-React/",
+      "text": "Ver Proyecto"
     }
   ],
   "contact": "contacto"

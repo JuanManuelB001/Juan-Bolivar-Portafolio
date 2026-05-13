@@ -107,10 +107,10 @@
       "title": "Experiencia Profesional",
       "jobs": [
         {
-          "img": "",
-          "company": "Papas Fritas 2ew",
-          "jobTitle": "job Title",
-          "period": "2023-3001",
+          "img": "onvacation.png",
+          "company": "On-Vacation",
+          "jobTitle": "Soporte Tecnico Nivel 1",
+          "period": "2025-2025",
           "abilitys": ["as", "2", "2df", "sdf"]
         },
         {
@@ -176,6 +176,15 @@
       "description": "Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
       "link": "https://juanmanuelb001.github.io/marvel-comic-react/",
       "text": "See Project"
+    },
+    {
+      "title": "Search Country",
+      "tech": ["Python", "DataAnalitics", "React"],
+      "img": "country.png",
+      "gif": "country.gif",
+      "description": "Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
+      "link": "https://juanmanuelb001.github.io/Search-country-React/",
+      "text": "Ver Proyecto"
     }
   ],
   "contact": "contact"
