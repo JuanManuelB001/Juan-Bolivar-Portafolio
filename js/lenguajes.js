@@ -123,14 +123,18 @@ function putInformation(data) {
     });
   } else {
     // NAV
-
     list_nav = Object.entries(data.nav);
     list_nav.forEach(([key, value]) => {
       document.querySelector(".header-nav-list").innerHTML +=
         `<li class="header-nav-item-dark" ><a href="#${key}">${value}</a></li>`;
     });
   }
-
+  //NAV-MENU
+  document.querySelectorAll(".header-nav-item a").forEach((link) => {
+    link.addEventListener("click", () => {
+      document.querySelector("#open-menu").checked = false;
+    });
+  });
   //INDICATORS
   document.querySelector(".indicator-number").innerHTML =
     data.indicators.num_experiences;

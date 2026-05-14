@@ -140,6 +140,7 @@ html {
   transform: scale(1.05);
 }
 .header-button-container {
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -288,6 +289,8 @@ html {
   position: absolute;
   font-size: 3rem;
   font-weight: 600;
+  padding: 10px;
+  margin: 0px;
   color: black;
   right: 10px;
 }
@@ -310,7 +313,7 @@ html {
 .header-nav-list {
   display: flex;
   flex-direction: column;
-  height: 400vh;
+  height: 60vh;
   margin: auto;
   justify-content: space-evenly;
 }
@@ -1157,6 +1160,13 @@ h2::after,
     width: auto;
     gap: 20px;
     margin-right: 40px;
+  }
+
+  .header-open-nav-button {
+    display: none;
+  }
+  .header-button-container {
+    width: auto;
   }
 }
 
