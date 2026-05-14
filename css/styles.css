@@ -824,15 +824,16 @@ h2::after,
 }
 
 .profile-badge {
+  max-width: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
+  background-color: var(--background-darkmode);
   color: #fff;
   border: none;
   outline: none;
   border-radius: 20px;
-  width: 100px;
+  min-width: 150px;
   height: 20px;
   padding: 12px 15px;
   font-size: 0.85rem;

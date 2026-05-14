@@ -8,6 +8,13 @@
     "portafolio": "Folder",
     "contacto": "Contact"
   },
+  "img_data": [
+    {
+      "experience": "1 Año de Experiencia",
+      "tools": ["Backend", "Frontend"],
+      "enginner": "Ingeniero de sistemas"
+    }
+  ],
   "p": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi non ad vero, iure voluptate delectus consequuntur animi numquam fugit odio quae aliquam quod eos dolorem eaque voluptates? Voluptates, quas!",
   "indicators": {
     "num_experiences": "1+",

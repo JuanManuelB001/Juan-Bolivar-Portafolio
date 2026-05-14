@@ -141,6 +141,26 @@ function putInformation(data) {
   document.querySelector(".experience-label").innerHTML =
     data.indicators.text_experiences;
 
+  // IMG-DATA
+  const info = data.img_data[0];
+  const badges = document.querySelector(".profile-badges");
+
+  for (const [key, value] of Object.entries(info)) {
+    // SI ES UN ARRAY
+    if (Array.isArray(value)) {
+      value.forEach((item) => {
+        badges.innerHTML += `
+        <span class="profile-badge">${item}</span>
+      `;
+      });
+    } else {
+      // SI ES STRING
+      badges.innerHTML += `
+      <span class="profile-badge">${value}</span>
+    `;
+    }
+  }
+
   //TECNOLOGYS
   document.querySelector(".tecnology-number").innerHTML =
     data.indicators.num_tecnology;
