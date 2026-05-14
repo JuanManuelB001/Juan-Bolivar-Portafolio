@@ -111,7 +111,7 @@ html {
 }
 
 .header-nav-item-dark a {
-  color: rgb(219, 223, 228);
+  color: rgb(20, 21, 21);
   text-decoration: none;
   transition: all 0.9s ease-out box-shadow 4s ease-in-out;
 }
@@ -1167,6 +1167,11 @@ h2::after,
   }
   .header-button-container {
     width: auto;
+  }
+  .header-nav-item-dark a {
+    color: rgb(219, 223, 228);
+    text-decoration: none;
+    transition: all 0.9s ease-out box-shadow 4s ease-in-out;
   }
 }
 
