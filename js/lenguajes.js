@@ -66,6 +66,18 @@ function spanishData() {
   }
 }
 
+function open_menu() {
+  const menu = document.getElementById("header-nav");
+  menu.classList.toggle("active");
+
+  //NAV-MENU
+  document.querySelectorAll(".header-nav-item a").forEach((link) => {
+    link.addEventListener("click", () => {
+      document.getElementById("header-nav").classList.remove("active");
+    });
+  });
+}
+
 function englishData() {
   let boton = document.querySelector(".button-lenguajes");
   let mode = JSON.parse(localStorage.getItem("modeWhite"));
@@ -129,12 +141,7 @@ function putInformation(data) {
         `<li class="header-nav-item-dark" ><a href="#${key}">${value}</a></li>`;
     });
   }
-  //NAV-MENU
-  document.querySelectorAll(".header-nav-item a").forEach((link) => {
-    link.addEventListener("click", () => {
-      document.querySelector("#open-menu").checked = false;
-    });
-  });
+
   //INDICATORS
   document.querySelector(".indicator-number").innerHTML =
     data.indicators.num_experiences;

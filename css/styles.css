@@ -323,14 +323,8 @@ html {
   justify-content: space-evenly;
 }
 
-.header-checkbox:checked ~ .header-nav {
+.header-nav.active {
   display: flex;
-  z-index: 999;
-}
-
-.header-checkbox:checked ~ .header-open-nav-button {
-  display: flex;
-  z-index: 1001;
 }
 
 /* PROFILE */
