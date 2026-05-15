@@ -342,4 +342,5 @@ function cleanDom() {
   document.querySelector(".section-wrapper").innerHTML = "";
   document.querySelector(".certifications").innerHTML = "";
   document.querySelector(".portfolio-wrapper").innerHTML = "";
+  document.querySelector(".profile-badges").innerHTML = "";
 }
