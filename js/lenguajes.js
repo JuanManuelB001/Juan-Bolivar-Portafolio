@@ -68,7 +68,10 @@ function spanishData() {
 
 function open_menu() {
   const menu = document.getElementById("header-nav");
+  const button = document.querySelector(".header-open-nav-button");
+
   menu.classList.toggle("active");
+  button.classList.toggle("active");
 
   //NAV-MENU
   document.querySelectorAll(".header-nav-item a").forEach((link) => {
@@ -241,7 +244,6 @@ function putInformation(data) {
   //SECTION-CONTAINER
   //title
   const wrapper = document.querySelector(".section-wrapper");
-
   data.experince_section.experience.jobs.forEach((element) => {
     const skills = element.abilitys
       .map(
@@ -263,9 +265,9 @@ function putInformation(data) {
         <div class="abilitys"><ul class="skills-list">${skills}</ul></div>
 
         <div class="about-job">
-        <h2>${mode ? "Acerca del Trabajo" : "About Job"}</h2>
-          <p >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit mollitia, aliquam excepturi labore tenetur nostrum quod doloremque expedita vero debitis qui delectus ut eum corporis itaque ratione corrupti iure totam.</p>
+        <h2>${storage ? "Acerca del Trabajo" : "About Job"}</h2>
+          <p class="${mode ? "card-description" : "card-description-dark"}">
+            ${element.description}</p>
         </div>
       </div>
     </div>

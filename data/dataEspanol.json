@@ -99,28 +99,13 @@
           "company": "On-Vacation",
           "jobTitle": "Soporte Tecnico Nivel 1",
           "period": "2025-2025",
-          "abilitys": ["as", "2", "2df", "sdf"]
-        },
-        {
-          "img": "",
-          "company": "Papas Fritaswww 2ew",
-          "jobTitle": "job Title",
-          "period": "2023-3001",
-          "abilitys": ["papas_2", "2", "2df", "sdf"]
-        },
-        {
-          "img": "",
-          "company": "Papas Fritaswww 2ew",
-          "jobTitle": "job Title",
-          "period": "2023-3001",
-          "abilitys": ["papas_2", "2", "2df", "sdf"]
-        },
-        {
-          "img": "",
-          "company": "Papas Fritaswww 2ew",
-          "jobTitle": "job Title",
-          "period": "2023-3001",
-          "abilitys": ["papas_2", "2", "2df", "sdf"]
+          "abilitys": [
+            "Atención al cliente",
+            "Offimatica",
+            "gestión del tiempo",
+            "Comunicación efectiva"
+          ],
+          "description": "realizaba diagnóstico básico de problemas técnicos, apoyaba en la configuración de equipos y aplicaciones, y daba seguimiento a incidentes hasta su resolución o escalamiento al equipo correspondiente. También registraba los casos en el sistema de soporte y brindaba asistencia por diferentes canales de atención."
         }
       ]
     },
@@ -143,7 +128,7 @@
       "tech": ["Python", "DataAnalitics", "React"],
       "img": "estrenoPlay.png",
       "gif": "estrenoPlay.gif",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
+      "description": "Aplicación web para explorar estrenos de películas y contenido multimedia, mostrando información actualizada y una interfaz dinámica para descubrir nuevos lanzamientos.",
       "link": "https://juanmanuelb001.github.io/Estreno-Play-React/",
       "text": "Ver Proyecto"
     },
@@ -152,7 +137,7 @@
       "tech": ["Python", "DataAnalitics", "React"],
       "img": "ecommerceCloth.png",
       "gif": "ecommerceCloth.gif",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
+      "description": "Tienda online de ropa desarrollada en React, donde los usuarios pueden navegar productos, ver detalles y simular un flujo de compra moderno e interactivo.",
       "link": "https://juanmanuelb001.github.io/Ecommerce-clothes-React/",
       "text": "Ver Proyecto"
     },
@@ -161,7 +146,7 @@
       "tech": ["Python", "DataAnalitics", "React"],
       "img": "marvelComic.png",
       "gif": "marvelComic.gif",
-      "description": "Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
+      "description": "Aplicación que permite explorar personajes y cómics del universo Marvel, consumiendo datos de una API para mostrar información detallada de cada personaje.",
       "link": "https://juanmanuelb001.github.io/marvel-comic-react/",
       "text": "Ver Proyecto"
     },
@@ -170,7 +155,7 @@
       "tech": ["Python", "DataAnalitics", "React"],
       "img": "country.png",
       "gif": "country.gif",
-      "description": "Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
+      "description": "Buscador de países que permite consultar información geográfica, población y datos relevantes de cada país mediante una interfaz sencilla y rápida.",
       "link": "https://juanmanuelb001.github.io/Search-country-React/",
       "text": "Ver Proyecto"
     }

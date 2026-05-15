@@ -151,6 +151,7 @@ html {
 
 .container-menu {
   display: flex;
+  background-color: red;
   justify-content: center;
   align-items: center;
   margin-left: 20px;
@@ -295,9 +296,17 @@ html {
   font-size: 3rem;
   font-weight: 600;
   padding: 10px;
-  margin: 0px;
-  color: black;
   right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.8s ease,
+    color 0.3s ease;
+}
+
+.header-open-nav-button.active {
+  transform: scale(1 01);
 }
 
 .header-checkbox {

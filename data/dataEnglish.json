@@ -118,28 +118,13 @@
           "company": "On-Vacation",
           "jobTitle": "Soporte Tecnico Nivel 1",
           "period": "2025-2025",
-          "abilitys": ["as", "2", "2df", "sdf"]
-        },
-        {
-          "img": "",
-          "company": "Papas Fritaswww 2ew",
-          "jobTitle": "job Title",
-          "period": "2023-3001",
-          "abilitys": ["papas_2", "2", "2df", "sdf"]
-        },
-        {
-          "img": "",
-          "company": "Papas Fritaswww 2ew",
-          "jobTitle": "job Title",
-          "period": "2023-3001",
-          "abilitys": ["papas_2", "2", "2df", "sdf"]
-        },
-        {
-          "img": "",
-          "company": "Papas Fritaswww 2ew",
-          "jobTitle": "job Title",
-          "period": "2023-3001",
-          "abilitys": ["papas_2", "2", "2df", "sdf"]
+          "abilitys": [
+            "Customer service",
+            "Office tools",
+            "Time management",
+            "Effective communication"
+          ],
+          "description": "I performed basic troubleshooting of technical issues, supported the configuration of equipment and applications, and followed up on incidents until they were resolved or escalated to the appropriate team. I also logged cases in the support system and provided assistance through different support channels."
         }
       ]
     },
@@ -162,7 +147,7 @@
       "tech": ["Python", "DataAnalitics", "React"],
       "img": "estrenoPlay.png",
       "gif": "estrenoPlay.gif",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
+      "description": "Web application to explore movie releases and multimedia content, providing up-to-date information and a dynamic interface to discover new titles.",
       "link": "https://juanmanuelb001.github.io/Estreno-Play-React/",
       "text": "See Project"
     },
@@ -171,7 +156,7 @@
       "tech": ["Python", "DataAnalitics", "React"],
       "img": "ecommerceCloth.png",
       "gif": "ecommerceCloth.gif",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
+      "description": "Online clothing store built with React, where users can browse products, view details, and simulate a modern and interactive shopping experience.",
       "link": "https://juanmanuelb001.github.io/Ecommerce-clothes-React/",
       "text": "See Project"
     },
@@ -180,7 +165,7 @@
       "tech": ["Python", "DataAnalitics", "React"],
       "img": "marvelComic.png",
       "gif": "marvelComic.gif",
-      "description": "Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
+      "description": "Application that allows users to explore Marvel characters and comics by consuming an API to display detailed information about each character.",
       "link": "https://juanmanuelb001.github.io/marvel-comic-react/",
       "text": "See Project"
     },
@@ -189,7 +174,7 @@
       "tech": ["Python", "DataAnalitics", "React"],
       "img": "country.png",
       "gif": "country.gif",
-      "description": "Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> Reiciendis maiores natus, quibusdam quam nobis, sunt, exercitationem impedit corporis obcaecati facilis hic odio iure necessitatibus rem architecto veritatis in totam voluptatem.",
+      "description": "Country search application that lets users access geographic data, population details, and relevant information through a simple and fast interface.",
       "link": "https://juanmanuelb001.github.io/Search-country-React/",
       "text": "Ver Proyecto"
     }
