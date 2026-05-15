@@ -105,8 +105,7 @@
     "Mockito",
     "Espresso"
   ],
-  "profileText": " we Need translate de person information--------- Estudiante de Ingeniería de Sistemas, cursando el octavo semestre, con un perfil orientado a la responsabilidad, la innovación y la mejora continua. Destaco por mi iniciativa, proactividad y capacidad para adaptarme a nuevos desafíos. Poseo excelentes habilidades interpersonales, facilidad para el trabajo en equipo y un enfoque analítico para la resolución de problemas.  Experiencia en desarrollo de software utilizando PHP, <strong>Python</strong>, Java con Spring Boot para backend, Flutter para frontend móvil, y React para frontend web. Manejo de control de versiones con Git y gestión de proyectos en GitHub, aplicando principios de programación orientada a objetos y desarrollo de aplicaciones completas tanto web como móviles.",
-  "profesional_experience": "Profesional Experience",
+  "profileText": "Computer Science Engineering student in <strong>final semester</strong>, focused on innovation, continuous improvement, and the development of technological solutions. I stand out for my proactivity, adaptability, and teamwork skills, with an analytical approach to problem-solving.Experience in development using <strong>Python</strong>, <strong>PHP</strong>, and <strong>Java with Spring Boot</strong> for backend, as well as <strong>React</strong> for web development and <strong>Flutter</strong> for mobile applications. Skilled in <strong>Git</strong> and <strong>GitHub</strong> for version control and project management.",
   "Portfolio": "Portfolio",
   "Certification": "Certifications",
   "experince_section": {
