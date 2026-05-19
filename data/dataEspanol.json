@@ -164,7 +164,7 @@
       "tech": ["Python", "DataAnalitics", "React"],
       "img": "tictactoe.png",
       "gif": "tictactoe.gif",
-      "description": "Buscador de países que permite consultar información geográfica, población y datos relevantes de cada país mediante una interfaz sencilla y rápida.",
+      "description": "Juego clásico de Tic-Tac-Toe desarrollado como aplicación web interactiva. Incluye una interfaz intuitiva, diseño responsivo y lógica dinámica para gestionar turnos y detectar automáticamente al ganador.",
       "link": "https://github.com/JuanManuelB001/tic-tac-toe-react",
       "text": "Ver Proyecto"
     },
