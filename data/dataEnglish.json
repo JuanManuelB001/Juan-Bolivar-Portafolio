@@ -180,8 +180,8 @@
     {
       "title": "tic-Tac-Toe",
       "tech": ["Python", "DataAnalitics", "React"],
-      "img": "country.png",
-      "gif": "country.gif",
+      "img": "tictactoe.png",
+      "gif": "tictactoe.gif",
       "description": "Buscador de países que permite consultar información geográfica, población y datos relevantes de cada país mediante una interfaz sencilla y rápida.",
       "link": "https://github.com/JuanManuelB001/tic-tac-toe-react",
       "text": "Ver Proyecto"
@@ -189,9 +189,9 @@
     {
       "title": "calculator",
       "tech": ["Python", "DataAnalitics", "React"],
-      "img": "country.png",
-      "gif": "country.gif",
-      "description": "Buscador de países que permite consultar información geográfica, población y datos relevantes de cada país mediante una interfaz sencilla y rápida.",
+      "img": "calculate.png",
+      "gif": "calculate.gif",
+      "description": "Interactive web calculator with dark and light theme support. It allows users to perform basic mathematical operations through a modern, responsive, and user-friendly interface, providing a dynamic visual experience.",
       "link": "https://juanmanuelb001.github.io/calculadora-tema-oscuro-claro-/",
       "text": "Ver Proyecto"
     }
