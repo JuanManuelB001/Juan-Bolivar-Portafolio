@@ -151,12 +151,21 @@
       "text": "Ver Proyecto"
     },
     {
-      "title": "Search Country",
+      "title": "tic-Tac-Toe",
       "tech": ["Python", "DataAnalitics", "React"],
       "img": "country.png",
       "gif": "country.gif",
       "description": "Buscador de países que permite consultar información geográfica, población y datos relevantes de cada país mediante una interfaz sencilla y rápida.",
-      "link": "https://juanmanuelb001.github.io/Search-country-React/",
+      "link": "https://github.com/JuanManuelB001/tic-tac-toe-react",
+      "text": "Ver Proyecto"
+    },
+    {
+      "title": "calculator",
+      "tech": ["Python", "DataAnalitics", "React"],
+      "img": "country.png",
+      "gif": "country.gif",
+      "description": "Buscador de países que permite consultar información geográfica, población y datos relevantes de cada país mediante una interfaz sencilla y rápida.",
+      "link": "https://juanmanuelb001.github.io/calculadora-tema-oscuro-claro-/",
       "text": "Ver Proyecto"
     }
   ],
