@@ -111,21 +111,36 @@
     },
     "certifications": [
       {
-        "organization": ["TalentoTech", "Alkosto"],
+        "organization": ["TalentoTech"],
         "title_certification": "Analiusis de Bases de Datos",
         "year": "2026"
       },
       {
-        "organization": ["Avanza-Tech", "Porvenir"],
-        "title_certification": "Inteligencia de Negocios",
+        "organization": ["Santander-Open Academy"],
+        "title_certification": "Python and Cursor: Smarter development with AI",
         "year": "2026"
+      },
+      {
+        "organization": ["IBM CognitiveClass"],
+        "title_certification": "Python 101 for Data Science",
+        "year": "2025"
+      },
+      {
+        "organization": ["LinkedIn Learning"],
+        "title_certification": "Fundamentos esenciales de la programación",
+        "year": "2025"
+      },
+      {
+        "organization": ["Google Cloud Partner", "Amplifica"],
+        "title_certification": "Gemini Academy",
+        "year": "2025"
       }
     ]
   },
   "portfolio_card": [
     {
       "title": "Estreno-Play",
-      "tech": ["Python", "DataAnalitics", "React"],
+      "tech": ["React", "css", "API"],
       "img": "estrenoPlay.png",
       "gif": "estrenoPlay.gif",
       "description": "Aplicación web para explorar estrenos de películas y contenido multimedia, mostrando información actualizada y una interfaz dinámica para descubrir nuevos lanzamientos.",
@@ -134,7 +149,7 @@
     },
     {
       "title": "Ecommerce Clothes",
-      "tech": ["Python", "DataAnalitics", "React"],
+      "tech": ["React", "css", "API", "Zustand"],
       "img": "ecommerceCloth.png",
       "gif": "ecommerceCloth.gif",
       "description": "Tienda online de ropa desarrollada en React, donde los usuarios pueden navegar productos, ver detalles y simular un flujo de compra moderno e interactivo.",
@@ -143,7 +158,7 @@
     },
     {
       "title": "Marvel Comics",
-      "tech": ["Python", "DataAnalitics", "React"],
+      "tech": ["React", "css", "API"],
       "img": "marvelComic.png",
       "gif": "marvelComic.gif",
       "description": "Aplicación que permite explorar personajes y cómics del universo Marvel, consumiendo datos de una API para mostrar información detallada de cada personaje.",
@@ -152,7 +167,7 @@
     },
     {
       "title": "Search Country",
-      "tech": ["Python", "DataAnalitics", "React"],
+      "tech": ["React", "css", "API"],
       "img": "country.png",
       "gif": "country.gif",
       "description": "Country search application that lets users access geographic data, population details, and relevant information through a simple and fast interface.",
@@ -161,7 +176,7 @@
     },
     {
       "title": "tic-Tac-Toe",
-      "tech": ["Python", "DataAnalitics", "React"],
+      "tech": ["React", "css", "AI rival"],
       "img": "tictactoe.png",
       "gif": "tictactoe.gif",
       "description": "Juego clásico de Tic-Tac-Toe desarrollado como aplicación web interactiva. Incluye una interfaz intuitiva, diseño responsivo y lógica dinámica para gestionar turnos y detectar automáticamente al ganador.",
@@ -170,7 +185,7 @@
     },
     {
       "title": "calculator",
-      "tech": ["Python", "DataAnalitics", "React"],
+      "tech": ["HTML", "Css", "JavaScript"],
       "img": "calculate.png",
       "gif": "calculate.gif",
       "description": "Calculadora web interactiva con soporte para tema oscuro y claro. Permite realizar operaciones matemáticas básicas mediante una interfaz moderna, responsiva y fácil de usar, ofreciendo una experiencia visual dinámica para el usuario.",

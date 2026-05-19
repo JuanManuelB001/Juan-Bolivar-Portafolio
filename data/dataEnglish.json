@@ -57,28 +57,9 @@
         "grade": "PreGrado",
         "title": "Ingeniero de Sistemas",
         "university": "Universidad Central"
-      },
-      {
-        "period": "202226",
-        "grade": "PreGrado",
-        "title": "Ingeniero de Industrial",
-        "university": "Universidad Central"
       }
     ],
-    "postgraduate": [
-      {
-        "period": "2019-2026",
-        "grade": "Undergraduate",
-        "title": "Ingeniero de Sistemas",
-        "university": "Universidad Central"
-      },
-      {
-        "period": "20886",
-        "grade": "Undergraduate",
-        "title": "tHING OF VALUES",
-        "university": "Universidad Central"
-      }
-    ]
+    "postgraduate": []
   },
   "profile_title": "Tools and Frameworks",
   "tools_technologies": [
@@ -129,21 +110,36 @@
     },
     "certifications": [
       {
-        "organization": ["TalentoTech", "Alkosto"],
-        "title_certification": "Analiusis de Bases de Datos",
+        "organization": ["TalentoTech"],
+        "title_certification": "Database Analysis",
         "year": "2026"
       },
       {
-        "organization": ["Avanza-Tech", "Porvenir"],
-        "title_certification": "Inteligencia de Negocios",
+        "organization": ["Santander-Open Academy"],
+        "title_certification": "Python and Cursor: Smarter Development with AI",
         "year": "2026"
+      },
+      {
+        "organization": ["IBM CognitiveClass"],
+        "title_certification": "Python 101 for Data Science",
+        "year": "2025"
+      },
+      {
+        "organization": ["LinkedIn Learning"],
+        "title_certification": "Essential Programming Foundations",
+        "year": "2025"
+      },
+      {
+        "organization": ["Google Cloud Partner", "Amplifica"],
+        "title_certification": "Gemini Academy",
+        "year": "2025"
       }
     ]
   },
   "portfolio_card": [
     {
       "title": "Estreno-Play",
-      "tech": ["Python", "DataAnalitics", "React"],
+      "tech": ["React", "css", "API"],
       "img": "estrenoPlay.png",
       "gif": "estrenoPlay.gif",
       "description": "Web application to explore movie releases and multimedia content, providing up-to-date information and a dynamic interface to discover new titles.",
@@ -152,7 +148,7 @@
     },
     {
       "title": "Ecommerce Clothes",
-      "tech": ["Python", "DataAnalitics", "React"],
+      "tech": ["React", "css", "API", "Zustand"],
       "img": "ecommerceCloth.png",
       "gif": "ecommerceCloth.gif",
       "description": "Online clothing store built with React, where users can browse products, view details, and simulate a modern and interactive shopping experience.",
@@ -161,7 +157,7 @@
     },
     {
       "title": "Marvel Comics",
-      "tech": ["Python", "DataAnalitics", "React"],
+      "tech": ["React", "css", "API"],
       "img": "marvelComic.png",
       "gif": "marvelComic.gif",
       "description": "Application that allows users to explore Marvel characters and comics by consuming an API to display detailed information about each character.",
@@ -170,7 +166,7 @@
     },
     {
       "title": "Search Country",
-      "tech": ["Python", "DataAnalitics", "React"],
+      "tech": ["React", "css", "API"],
       "img": "country.png",
       "gif": "country.gif",
       "description": "Country search application that lets users access geographic data, population details, and relevant information through a simple and fast interface.",
@@ -179,7 +175,7 @@
     },
     {
       "title": "tic-Tac-Toe",
-      "tech": ["Python", "DataAnalitics", "React"],
+      "tech": ["React", "css", "AI component"],
       "img": "tictactoe.png",
       "gif": "tictactoe.gif",
       "description": "Classic Tic-Tac-Toe game developed as an interactive web application. It features an intuitive interface, responsive design, and dynamic logic to manage turns",
@@ -188,7 +184,7 @@
     },
     {
       "title": "calculator",
-      "tech": ["Python", "DataAnalitics", "React"],
+      "tech": ["HTML", "Css", "JavaScript"],
       "img": "calculate.png",
       "gif": "calculate.gif",
       "description": "Interactive web calculator with dark and light theme support. It allows users to perform basic mathematical operations through a modern, responsive, and user-friendly interface, providing a dynamic visual experience.",

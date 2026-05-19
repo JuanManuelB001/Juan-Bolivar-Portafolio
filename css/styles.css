@@ -722,7 +722,7 @@ h2::after,
 }
 .certifications-details {
   flex: 1 1 280px;
-  max-width: 320px;
+  max-width: 290px;
   background-color: rgba(248, 250, 252, 1);
   display: flex;
   position: relative;
@@ -739,7 +739,7 @@ h2::after,
 
 .certifications-details-dark {
   flex: 1 1 280px;
-  max-width: 320px;
+  max-width: 290px;
   background-color: var(--card-dark);
   display: flex;
   position: relative;
